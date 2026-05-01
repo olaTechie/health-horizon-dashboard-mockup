@@ -135,7 +135,13 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
   }, []);
 
   const addDataLayers = useCallback((map: MapLibreMap, mapSignals: Signal[], mapAssets: Asset[]) => {
-    if (!map.isStyleLoaded()) return;
+    // MapLibre quirk: `map.on('load')` fires before `isStyleLoaded()` flips
+    // to true (the load event signals first-render-complete; the style-loaded
+    // flag flips a frame later). Don't trust isStyleLoaded() as a precondition
+    // here — guard with `getStyle()` and the individual layer/source checks
+    // below. This was previously bailing every initial paint, leaving the map
+    // with country outlines but no signals.
+    if (!map.getStyle()) return;
     const theme = getTheme();
     const isOps = theme === 'ops';
 
@@ -242,32 +248,38 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
       if (!map.getSource('signals-src')) {
         map.addSource('signals-src', { type: 'geojson', data: signalGeoJSON });
       }
-      map.addLayer({
-        id: 'signals',
-        type: 'circle',
-        source: 'signals-src',
-        paint: {
-          'circle-radius': 7,
-          'circle-color': ['get', 'color'],
-          'circle-opacity': 0.9,
-          'circle-stroke-width': 1.5,
-          'circle-stroke-color': 'rgba(255,255,255,0.6)',
-        },
-      });
-
-      // Pulse layer for action tier
+      // Pulse layer for action tier — added BEFORE the solid pin so the
+      // ring sits behind the dot. Larger radius and higher contrast so
+      // the methodologically-coded escalation reads at world zoom.
       map.addLayer({
         id: 'signal-pulse',
         type: 'circle',
         source: 'signals-src',
         filter: ['==', ['get', 'isAction'], 1],
         paint: {
-          'circle-radius': 14,
-          'circle-color': 'transparent',
-          'circle-opacity': 0.4,
+          'circle-radius': 22,
+          'circle-color': ['get', 'color'],
+          'circle-opacity': 0.18,
           'circle-stroke-width': 2,
           'circle-stroke-color': ['get', 'color'],
-          'circle-stroke-opacity': 0.5,
+          'circle-stroke-opacity': 0.7,
+        },
+      });
+
+      map.addLayer({
+        id: 'signals',
+        type: 'circle',
+        source: 'signals-src',
+        paint: {
+          'circle-radius': [
+            'case',
+            ['==', ['get', 'isAction'], 1], 10,
+            8,
+          ],
+          'circle-color': ['get', 'color'],
+          'circle-opacity': 0.95,
+          'circle-stroke-width': 2,
+          'circle-stroke-color': 'rgba(255,255,255,0.85)',
         },
       });
     }
@@ -297,11 +309,16 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
     pulseIntervalRef.current = setInterval(() => {
       if (!map.isStyleLoaded() || !map.getLayer('signal-pulse')) return;
       pulseRadiusRef.current = !pulseRadiusRef.current;
-      const r = pulseRadiusRef.current ? 14 : 20;
-      const op = pulseRadiusRef.current ? 0.5 : 0.1;
+      // Two-state pulse: contracted (visible ring + faint fill), expanded
+      // (large faint ring with no fill). Tuned to read at world zoom now
+      // that asset clutter is off by default.
+      const r = pulseRadiusRef.current ? 22 : 34;
+      const fillOp = pulseRadiusRef.current ? 0.18 : 0;
+      const strokeOp = pulseRadiusRef.current ? 0.7 : 0.15;
       map.setPaintProperty('signal-pulse', 'circle-radius', r);
-      map.setPaintProperty('signal-pulse', 'circle-stroke-opacity', op);
-    }, 600);
+      map.setPaintProperty('signal-pulse', 'circle-opacity', fillOp);
+      map.setPaintProperty('signal-pulse', 'circle-stroke-opacity', strokeOp);
+    }, 700);
   }, []);
 
   useEffect(() => {

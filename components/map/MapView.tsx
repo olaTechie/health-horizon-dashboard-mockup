@@ -42,7 +42,11 @@ type PlaySpeed = 1 | 4 | 8 | 16;
 
 const FOURTEEN_DAYS_MS = 14 * 24 * 60 * 60 * 1000;
 
-const DEFAULT_LAYERS = new Set(['assets']);
+// Start with no overlay layers active so the signal pins — particularly the
+// pulsing Action-tier ones — read first on initial paint. Asset dots are
+// dense at low zoom and obscure the few signals that actually need executive
+// attention; users can toggle them on from the LayerToggles panel.
+const DEFAULT_LAYERS = new Set<string>();
 
 interface MapViewProps {
   signals: Signal[];
