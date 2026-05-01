@@ -50,7 +50,11 @@ function computeKeyStats(brief: Brief, signals: Signal[]) {
 }
 
 function initials(name: string): string {
-  return name
+  // Take only the proper-name portion before the first comma so
+  // credentials (", MD, PhD") don't pollute the initials.
+  // "Victor Adekanmbi, MD, PhD" → "Victor Adekanmbi" → "VA".
+  const nameOnly = name.split(',')[0] ?? name;
+  return nameOnly
     .split(/\s+/)
     .filter(Boolean)
     .map((w) => w[0])

@@ -17,7 +17,10 @@ export const BRIEFS: Brief[] = [
       { theme: 'Infectious Disease: Mpox Clade Ib Geographic Expansion', summary: 'Cross-border clusters in Central/East Africa.', signalIds: ['SIG-2026-Q2-001'] },
     ],
     watchlistSignalIds: ['SIG-2026-Q2-001', 'SIG-2026-Q2-009', 'SIG-2026-Q2-025', 'SIG-2026-Q2-033'],
-    signedOffBy: [{ name: 'Dr. A. Mwangi', role: 'Lead Expert, Infectious Disease' }, { name: 'Prof. L. van der Berg', role: 'Lead Expert, Occupational Exposure' }],
+    signedOffBy: [
+      { name: 'Victor Adekanmbi, MD, PhD', role: 'Programme Lead, Health Horizon Scanning' },
+      { name: 'Fangjian Guo, MD, PhD', role: 'Lead Methodologist, Evidence Synthesis' },
+    ],
     pdfPath: '/briefs/2025-Q3.pdf',
   },
   {
@@ -36,7 +39,10 @@ export const BRIEFS: Brief[] = [
       { theme: 'Occupational Exposure: PFAS Firefighting Foam Phase-Out', summary: 'Cross-asset audit triggers and decommissioning exposure.', signalIds: ['SIG-2026-Q2-010'] },
     ],
     watchlistSignalIds: ['SIG-2026-Q2-010', 'SIG-2026-Q2-017', 'SIG-2026-Q2-018', 'SIG-2026-Q2-028'],
-    signedOffBy: [{ name: 'Dr. A. Mwangi', role: 'Lead Expert, Infectious Disease' }, { name: 'Dr. K. Tanaka', role: 'Lead Expert, Regulatory & Standards' }],
+    signedOffBy: [
+      { name: 'Victor Adekanmbi, MD, PhD', role: 'Programme Lead, Health Horizon Scanning' },
+      { name: 'Fangjian Guo, MD, PhD', role: 'Lead Methodologist, Evidence Synthesis' },
+    ],
     pdfPath: '/briefs/2025-Q4.pdf',
   },
   {
@@ -55,7 +61,10 @@ export const BRIEFS: Brief[] = [
       { theme: 'AMR: Medevac Pathway Hospitals in High-Resistance Regions', summary: 'Triangulated PubMed and WHO data for revised medevac assumptions.', signalIds: ['SIG-2026-Q2-004'] },
     ],
     watchlistSignalIds: ['SIG-2026-Q2-001', 'SIG-2026-Q2-004', 'SIG-2026-Q2-039'],
-    signedOffBy: [{ name: 'Prof. L. van der Berg', role: 'Lead Expert, Occupational Exposure' }, { name: 'Dr. M. Okonkwo', role: 'Lead Expert, Psychosocial' }],
+    signedOffBy: [
+      { name: 'Victor Adekanmbi, MD, PhD', role: 'Programme Lead, Health Horizon Scanning' },
+      { name: 'Fangjian Guo, MD, PhD', role: 'Lead Methodologist, Evidence Synthesis' },
+    ],
     pdfPath: '/briefs/2026-Q1.pdf',
   },
   {
@@ -76,7 +85,10 @@ export const BRIEFS: Brief[] = [
       { theme: 'Regulatory: NIOSH Heat-Stress Final Rule Pathway', summary: 'Timing, scope, and Shell readiness assessment.', signalIds: ['SIG-2026-Q2-017'] },
     ],
     watchlistSignalIds: ['SIG-2026-Q2-001', 'SIG-2026-Q2-002', 'SIG-2026-Q2-017', 'SIG-2026-Q2-025', 'SIG-2026-Q2-039'],
-    signedOffBy: [{ name: 'Dr. A. Mwangi', role: 'Lead Expert, Infectious Disease' }, { name: 'Prof. L. van der Berg', role: 'Lead Expert, Occupational Exposure' }, { name: 'Dr. K. Tanaka', role: 'Lead Expert, Regulatory & Standards' }, { name: 'Dr. R. Patel', role: 'Lead Expert, Climate–Health' }, { name: 'Dr. M. Okonkwo', role: 'Lead Expert, Psychosocial' }],
+    signedOffBy: [
+      { name: 'Victor Adekanmbi, MD, PhD', role: 'Programme Lead, Health Horizon Scanning' },
+      { name: 'Fangjian Guo, MD, PhD', role: 'Lead Methodologist, Evidence Synthesis' },
+    ],
     pdfPath: '/briefs/2026-Q2.pdf',
   },
 ];

@@ -34,12 +34,12 @@
     ],
     "signedOffBy": [
       {
-        "name": "Dr. A. Mwangi",
-        "role": "Lead Expert, Infectious Disease"
+        "name": "Victor Adekanmbi, MD, PhD",
+        "role": "Programme Lead, Health Horizon Scanning"
       },
       {
-        "name": "Prof. L. van der Berg",
-        "role": "Lead Expert, Occupational Exposure"
+        "name": "Fangjian Guo, MD, PhD",
+        "role": "Lead Methodologist, Evidence Synthesis"
       }
     ],
     "pdfPath": "/briefs/2025-Q3.pdf"
@@ -79,12 +79,12 @@
     ],
     "signedOffBy": [
       {
-        "name": "Dr. A. Mwangi",
-        "role": "Lead Expert, Infectious Disease"
+        "name": "Victor Adekanmbi, MD, PhD",
+        "role": "Programme Lead, Health Horizon Scanning"
       },
       {
-        "name": "Dr. K. Tanaka",
-        "role": "Lead Expert, Regulatory & Standards"
+        "name": "Fangjian Guo, MD, PhD",
+        "role": "Lead Methodologist, Evidence Synthesis"
       }
     ],
     "pdfPath": "/briefs/2025-Q4.pdf"
@@ -123,12 +123,12 @@
     ],
     "signedOffBy": [
       {
-        "name": "Prof. L. van der Berg",
-        "role": "Lead Expert, Occupational Exposure"
+        "name": "Victor Adekanmbi, MD, PhD",
+        "role": "Programme Lead, Health Horizon Scanning"
       },
       {
-        "name": "Dr. M. Okonkwo",
-        "role": "Lead Expert, Psychosocial"
+        "name": "Fangjian Guo, MD, PhD",
+        "role": "Lead Methodologist, Evidence Synthesis"
       }
     ],
     "pdfPath": "/briefs/2026-Q1.pdf"
@@ -177,24 +177,12 @@
     ],
     "signedOffBy": [
       {
-        "name": "Dr. A. Mwangi",
-        "role": "Lead Expert, Infectious Disease"
+        "name": "Victor Adekanmbi, MD, PhD",
+        "role": "Programme Lead, Health Horizon Scanning"
       },
       {
-        "name": "Prof. L. van der Berg",
-        "role": "Lead Expert, Occupational Exposure"
-      },
-      {
-        "name": "Dr. K. Tanaka",
-        "role": "Lead Expert, Regulatory & Standards"
-      },
-      {
-        "name": "Dr. R. Patel",
-        "role": "Lead Expert, Climate–Health"
-      },
-      {
-        "name": "Dr. M. Okonkwo",
-        "role": "Lead Expert, Psychosocial"
+        "name": "Fangjian Guo, MD, PhD",
+        "role": "Lead Methodologist, Evidence Synthesis"
       }
     ],
     "pdfPath": "/briefs/2026-Q2.pdf"
