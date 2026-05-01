@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Search, Download, Table2, LayoutGrid, GitBranchPlus, Command } from 'lucide-react';
+import { Search, Download, Table2, LayoutGrid, GitBranchPlus, Command, SlidersHorizontal, X } from 'lucide-react';
 import { applyFilters, parseFilterParams, serializeFilters } from '@/lib/filters';
 import type { FilterState } from '@/lib/filters';
 import type { Signal } from '@/lib/types';
@@ -44,6 +44,7 @@ function SignalsExplorerInner({ initialSignals }: SignalsExplorerInnerProps) {
 
   const [selectedSignal, setSelectedSignal] = useState<Signal | null>(null);
   const [paletteOpen, setPaletteOpen] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   // Derive state from URL
   const filters: FilterState = parseFilterParams(searchParams);
@@ -119,21 +120,33 @@ function SignalsExplorerInner({ initialSignals }: SignalsExplorerInnerProps) {
   ];
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-[calc(100vh-3.5rem)] lg:h-screen overflow-hidden">
       {/* Page header */}
-      <div className="px-8 py-5 border-b border-[var(--border)] bg-[var(--surface)] shrink-0">
-        <div className="flex items-center justify-between gap-4">
-          <div>
-            <h1 className="font-display text-2xl font-semibold text-[var(--ink)]">
-              Signal Explorer
-            </h1>
-            <p className="text-xs text-[var(--ink-tertiary)] mt-0.5">
-              {filteredSignals.length} of {initialSignals.length} signals
-            </p>
+      <div className="px-4 py-4 sm:px-6 lg:px-8 lg:py-5 border-b border-[var(--border)] bg-[var(--surface)] shrink-0">
+        <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between lg:gap-4">
+          <div className="flex items-center justify-between lg:block">
+            <div>
+              <h1 className="font-display text-xl lg:text-2xl font-semibold text-[var(--ink)]">
+                Signal Explorer
+              </h1>
+              <p className="text-xs text-[var(--ink-tertiary)] mt-0.5">
+                {filteredSignals.length} of {initialSignals.length} signals
+              </p>
+            </div>
+            {/* Mobile filter toggle (icon only) */}
+            <button
+              type="button"
+              onClick={() => setMobileFiltersOpen(true)}
+              className="lg:hidden inline-flex items-center gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-xs text-[var(--ink-secondary)] hover:text-[var(--ink)]"
+              aria-label="Open filters"
+            >
+              <SlidersHorizontal size={13} />
+              Filters
+            </button>
           </div>
 
           {/* Toolbar */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 overflow-x-auto">
             {/* Cmd-K button */}
             <button
               onClick={() => setPaletteOpen(true)}
@@ -195,11 +208,38 @@ function SignalsExplorerInner({ initialSignals }: SignalsExplorerInnerProps) {
 
       {/* Main content area */}
       <div className="flex flex-1 min-h-0 overflow-hidden">
-        {/* Facet Rail */}
-        <FacetRail
-          signals={initialSignals}
-          filters={filters}
-        />
+        {/* Facet Rail — desktop sidebar; mobile drawer */}
+        <div className="hidden lg:block">
+          <FacetRail
+            signals={initialSignals}
+            filters={filters}
+          />
+        </div>
+        {mobileFiltersOpen && (
+          <div className="lg:hidden fixed inset-0 z-50 flex" role="dialog" aria-modal="true">
+            <button
+              aria-label="Close filters overlay"
+              onClick={() => setMobileFiltersOpen(false)}
+              className="absolute inset-0 bg-[var(--ink)]/40"
+            />
+            <div className="relative w-full max-w-[320px] flex flex-col bg-[var(--surface)] border-r border-[var(--border)]">
+              <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--border)] shrink-0">
+                <span className="font-mono text-[11px] uppercase tracking-wider text-[var(--ink-secondary)]">Filters</span>
+                <button
+                  type="button"
+                  aria-label="Close filters"
+                  onClick={() => setMobileFiltersOpen(false)}
+                  className="size-8 inline-flex items-center justify-center rounded-md hover:bg-[var(--panel)]"
+                >
+                  <X size={16} />
+                </button>
+              </div>
+              <div className="flex-1 min-h-0 overflow-y-auto">
+                <FacetRail signals={initialSignals} filters={filters} />
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Content pane */}
         <div className="flex flex-1 min-w-0 overflow-hidden">
@@ -223,8 +263,10 @@ function SignalsExplorerInner({ initialSignals }: SignalsExplorerInnerProps) {
             />
           )}
 
-          {/* Quick Peek */}
-          <QuickPeek signal={selectedSignal} />
+          {/* Quick Peek — desktop only (no hover on touch) */}
+          <div className="hidden lg:block">
+            <QuickPeek signal={selectedSignal} />
+          </div>
         </div>
       </div>
 

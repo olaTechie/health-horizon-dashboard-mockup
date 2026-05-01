@@ -255,14 +255,14 @@ export function SnapshotMap({ signals, assets }: Props) {
         </span>
       </div>
 
-      <div className="flex gap-0">
-        {/* Map — 2/3 */}
-        <div className="flex-1 min-w-0 border-r border-[var(--border)] bg-[var(--panel)]">
+      <div className="flex flex-col lg:flex-row gap-0">
+        {/* Map — 2/3 on desktop, full-width on mobile */}
+        <div className="flex-1 min-w-0 border-b lg:border-b-0 lg:border-r border-[var(--border)] bg-[var(--panel)]">
           <MapCanvas signals={signals} assets={assets} />
         </div>
 
-        {/* Leaderboard — 1/3 */}
-        <div className="w-[280px] shrink-0 px-4 py-4">
+        {/* Leaderboard — 1/3 on desktop, stacked below on mobile */}
+        <div className="w-full lg:w-[280px] lg:shrink-0 px-4 py-4">
           <RegionLeaderboard signals={signals} />
         </div>
       </div>

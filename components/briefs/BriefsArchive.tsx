@@ -37,8 +37,8 @@ function BriefsArchiveInner({ briefs, signals }: BriefsArchiveProps) {
   return (
     <div className="min-h-screen bg-[var(--bg)]">
       {/* Page header */}
-      <div className="border-b border-[var(--border)] px-8 py-6">
-        <h1 className="font-display text-3xl text-[var(--ink)]" style={{ fontVariationSettings: '"opsz" 96' }}>
+      <div className="border-b border-[var(--border)] px-4 sm:px-6 lg:px-8 py-5 lg:py-6">
+        <h1 className="font-display text-2xl lg:text-3xl text-[var(--ink)]" style={{ fontVariationSettings: '"opsz" 96' }}>
           Quarterly Briefs Archive
         </h1>
         <p className="mt-1 text-sm text-[var(--ink-secondary)]">
@@ -47,7 +47,7 @@ function BriefsArchiveInner({ briefs, signals }: BriefsArchiveProps) {
       </div>
 
       {/* Carousel */}
-      <div className="px-8 py-6 border-b border-[var(--border)]">
+      <div className="px-4 sm:px-6 lg:px-8 py-5 lg:py-6 border-b border-[var(--border)]">
         <BriefCarousel
           briefs={briefs}
           signals={signals}
@@ -57,7 +57,7 @@ function BriefsArchiveInner({ briefs, signals }: BriefsArchiveProps) {
       </div>
 
       {/* Reader + floating TOC */}
-      <div className="relative px-8 py-10">
+      <div className="relative px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
         {/* TOC rail — fixed right, only on wide screens */}
         <div className="hidden xl:block">
           <BriefMiniTOC />

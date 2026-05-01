@@ -45,11 +45,11 @@ export function HeroTicker({ signals, meta }: Props) {
       aria-label="Featured signal ticker"
     >
       {/* Header row */}
-      <div className="flex items-center justify-between px-8 pt-8 pb-4">
-        <h1 className="font-display text-[clamp(32px,4vw,56px)] leading-none text-[var(--ink)] tracking-tight">
+      <div className="flex flex-col gap-3 px-5 pt-6 pb-4 sm:px-8 sm:pt-8 lg:flex-row lg:items-center lg:justify-between">
+        <h1 className="font-display text-[clamp(26px,5vw,56px)] leading-[1.05] text-[var(--ink)] tracking-tight">
           Global Health Horizon — Q2 2026
         </h1>
-        <span className="font-mono text-xs text-[var(--ink-tertiary)] shrink-0 ml-4 inline-flex items-center gap-2" title="Live monitoring is active">
+        <span className="font-mono text-[11px] sm:text-xs text-[var(--ink-tertiary)] shrink-0 lg:ml-4 inline-flex items-center gap-2" title="Live monitoring is active">
           <span aria-hidden="true" className="relative inline-flex size-1.5">
             <span className="absolute inset-0 rounded-full bg-[var(--tier-watch)] animate-monitor-ping" />
             <span className="relative size-1.5 rounded-full bg-[var(--tier-watch)]" />
@@ -59,7 +59,7 @@ export function HeroTicker({ signals, meta }: Props) {
       </div>
 
       {/* Animated signal */}
-      <div className="relative h-[140px] px-8 pb-8">
+      <div className="relative min-h-[180px] sm:h-[140px] px-5 pb-6 sm:px-8 sm:pb-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={current.id}
@@ -67,14 +67,14 @@ export function HeroTicker({ signals, meta }: Props) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
-            className="absolute inset-0 px-8 pb-8 flex flex-col justify-between"
+            className="absolute inset-0 px-5 pb-6 sm:px-8 sm:pb-8 flex flex-col justify-between"
           >
-            <div className="flex items-start gap-3 mt-1">
+            <div className="flex flex-wrap items-start gap-2 mt-1 sm:gap-3">
               <TierBadge tier={current.tier} />
               {current.ppa.map((p) => (
                 <PpaChip key={p} pillar={p} />
               ))}
-              <span className="ml-auto flex items-center gap-1.5 text-xs text-[var(--ink-secondary)] font-mono">
+              <span className="basis-full lg:basis-auto lg:ml-auto flex items-center gap-1.5 text-[11px] sm:text-xs text-[var(--ink-secondary)] font-mono">
                 <AgentIcon id={current.agent} size={13} />
                 {AGENT_LABEL[current.agent]}
               </span>

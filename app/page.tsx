@@ -16,7 +16,7 @@ export default async function DashboardPage() {
   const { signals, assets, agents, meta } = await loadAll();
 
   return (
-    <div className="space-y-10 px-8 py-10">
+    <div className="space-y-8 px-4 py-6 sm:px-6 sm:py-8 lg:space-y-10 lg:px-8 lg:py-10">
       {/* Band 1 — Hero ticker */}
       <HeroTicker signals={signals} meta={meta} />
 

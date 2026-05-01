@@ -75,7 +75,11 @@ export function KpiStrip({ signals, meta }: Props) {
   const uptimePct = meta.uptimePct;
 
   return (
-    <div className="grid grid-cols-5 gap-4" role="region" aria-label="Key performance indicators">
+    <div
+      className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5"
+      role="region"
+      aria-label="Key performance indicators"
+    >
       <KpiTile
         label="Active Signals"
         value={activeCount.toLocaleString()}

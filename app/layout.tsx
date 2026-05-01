@@ -37,7 +37,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <SideRail />
         <Suspense fallback={null}><GlobalFilters /></Suspense>
-        <main className="ml-[180px] min-h-screen">{children}</main>
+        {/* Layout offsets:
+              < lg : 56px top bar (mobile) → pt-14
+              ≥ lg : 180px side rail (desktop) → pt-0, ml-[180px]
+            Combined with min-h-screen so backgrounds fill on short pages. */}
+        <main className="pt-14 lg:pt-0 lg:ml-[180px] min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

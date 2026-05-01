@@ -32,7 +32,7 @@ export function StickyHeader({ signal }: { signal: Signal }) {
   }
 
   return (
-    <div className="sticky top-0 z-20 bg-[var(--surface)] border-b border-hair px-8 py-4">
+    <div className="sticky top-14 lg:top-0 z-20 bg-[var(--surface)] border-b border-hair px-4 sm:px-6 lg:px-8 py-4">
       <div className="flex items-start justify-between gap-4">
         {/* Left: back + meta */}
         <div className="flex flex-col gap-2 min-w-0">

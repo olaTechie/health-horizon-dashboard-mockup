@@ -56,10 +56,10 @@ export default async function SignalDetailPage({
       <StickyHeader signal={signal} />
 
       {/* Page body */}
-      <div className="px-8 py-10">
-        <div className="grid grid-cols-3 gap-8">
-          {/* Main column — col-span-2 */}
-          <main className="col-span-2 flex flex-col gap-10">
+      <div className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          {/* Main column — col-span-2 on desktop, full width on mobile */}
+          <main className="lg:col-span-2 flex flex-col gap-8 lg:gap-10">
 
             {/* Summary pull-quote */}
             <section>
@@ -119,8 +119,8 @@ export default async function SignalDetailPage({
 
           </main>
 
-          {/* Side panel — col-span-1 */}
-          <aside className="col-span-1">
+          {/* Side panel — col-span-1 on desktop, stacked below on mobile */}
+          <aside className="lg:col-span-1">
             <div className="sticky top-[120px]">
               <SidePanel
                 signal={signal}

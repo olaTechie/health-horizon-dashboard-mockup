@@ -38,7 +38,10 @@ export function GlobalFilters() {
   };
 
   return (
-    <div className="fixed right-6 top-4 z-30 flex items-center gap-2">
+    // < lg : hide PPA + horizon clusters (no room next to the hamburger);
+    //       theme toggle still surfaces via a fixed bottom-right button below.
+    // ≥ lg : full filter cluster + theme toggle, top-right.
+    <div className="hidden lg:flex fixed right-6 top-4 z-30 items-center gap-2">
       <div className="flex items-center gap-1 rounded-md border border-hair bg-[var(--surface)] p-1">
         {PPA_OPTIONS.map((p) => {
           const on = filters.ppas?.includes(p.id);
