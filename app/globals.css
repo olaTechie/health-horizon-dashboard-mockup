@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+  --color-tier-watch: var(--tier-watch);
+  --color-tier-attention: var(--tier-attention);
+  --color-tier-action: var(--tier-action);
+  --color-ppa-promote: var(--ppa-promote);
+  --color-ppa-protect: var(--ppa-protect);
+  --color-ppa-access: var(--ppa-access);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root, [data-theme="editorial"] {
+  --bg: #FAFAF7;
+  --surface: #FFFFFF;
+  --panel: #F5F4EE;
+  --border: #E6E4DD;
+  --ink: #0E1116;
+  --ink-secondary: #4A4F58;
+  --ink-tertiary: #8B8F96;
+  --tier-watch: #3A6EA5;
+  --tier-attention: #C9821B;
+  --tier-action: #B23A3A;
+  --ppa-promote: #5B8466;
+  --ppa-protect: #5E5A8A;
+  --ppa-access: #A85C3E;
+  --display-family: var(--font-fraunces);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+[data-theme="ops"] {
+  --bg: #0A0D12;
+  --surface: #10141B;
+  --panel: #161B23;
+  --border: #222833;
+  --ink: #E6EAF2;
+  --ink-secondary: #9AA3B2;
+  --ink-tertiary: #5C6573;
+  --tier-watch: #5B8FCB;
+  --tier-attention: #E5A23F;
+  --tier-action: #E25C5C;
+  --ppa-promote: #7FB58E;
+  --ppa-protect: #8B86C4;
+  --ppa-access: #D08465;
+  --display-family: var(--font-inter);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+}
+
+.font-display { font-family: var(--display-family); font-variation-settings: "opsz" 96; }
+.font-mono { font-family: var(--font-mono); }
+
+/* hairline border helper */
+.border-hair { border-color: var(--border); }
+
+/* ops grid overlay */
+[data-theme="ops"] .ops-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* focus rings (both themes) */
+:where(button, a, input, select, textarea, [role="button"], [role="tab"]):focus-visible {
+  outline: 2px solid var(--tier-watch);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
