@@ -419,9 +419,14 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
   }, []);
 
   return (
+    // size-full (w/h: 100%) is critical: MapLibre's library CSS sets
+    // `.maplibregl-map { position: relative }`, which overrides any
+    // `position: absolute` on this container and makes `inset-0` stop
+    // contributing height. Without explicit width+height the container
+    // collapses to 0px tall and the canvas stays invisible.
     <div
       ref={containerRef}
-      className="absolute inset-0"
+      className="size-full"
       aria-label="Geographic map of Shell assets and health signals"
       role="img"
     />
