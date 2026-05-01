@@ -49,7 +49,11 @@ export function HeroTicker({ signals, meta }: Props) {
         <h1 className="font-display text-[clamp(32px,4vw,56px)] leading-none text-[var(--ink)] tracking-tight">
           Global Health Horizon — Q2 2026
         </h1>
-        <span className="font-mono text-xs text-[var(--ink-tertiary)] shrink-0 ml-4">
+        <span className="font-mono text-xs text-[var(--ink-tertiary)] shrink-0 ml-4 inline-flex items-center gap-2" title="Live monitoring is active">
+          <span aria-hidden="true" className="relative inline-flex size-1.5">
+            <span className="absolute inset-0 rounded-full bg-[var(--tier-watch)] animate-monitor-ping" />
+            <span className="relative size-1.5 rounded-full bg-[var(--tier-watch)]" />
+          </span>
           Last refreshed: {fmtRelative(meta.generatedAt)}
         </span>
       </div>

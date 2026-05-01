@@ -47,6 +47,13 @@ export function TriangulationDiagram({ sources }: { sources: SourceCitation[] })
   const present = new Set(sources.map((s) => s.type));
   const count = present.size;
 
+  // Stagger: active source types reveal in declared order so the diagram
+  // *narrates* corroboration. Inactive types fade in once at the end so
+  // the absence is acknowledged rather than hidden.
+  const activeOrder = ALL_TYPES.filter((t) => present.has(t));
+  const activeIndex = (type: SourceType) => activeOrder.indexOf(type);
+  const inactiveDelay = 220 + activeOrder.length * 130 + 120;
+
   return (
     <div className="flex flex-col gap-3">
       <div className="flex items-center justify-between">
@@ -65,10 +72,11 @@ export function TriangulationDiagram({ sources }: { sources: SourceCitation[] })
         className="w-full max-w-[360px]"
         aria-label="Triangulation diagram showing signal source types"
       >
-        {/* connection lines — only for present sources */}
+        {/* connection lines — only for present sources, draw in sequence */}
         {ALL_TYPES.map((type, idx) => {
           if (!present.has(type)) return null;
           const [sx, sy] = satCoords(idx);
+          const delay = 220 + activeIndex(type) * 130;
           return (
             <line
               key={`line-${type}`}
@@ -79,12 +87,22 @@ export function TriangulationDiagram({ sources }: { sources: SourceCitation[] })
               stroke={TYPE_COLOR[type]}
               strokeWidth={1.5}
               strokeOpacity={0.55}
+              className="triangulation-line"
+              style={{ animationDelay: `${delay}ms` }}
             />
           );
         })}
 
-        {/* center "Signal" node */}
-        <circle cx={CX} cy={CY} r={R_CENTER} fill="var(--ink)" fillOpacity={0.9} />
+        {/* center "Signal" node — first to land */}
+        <circle
+          cx={CX}
+          cy={CY}
+          r={R_CENTER}
+          fill="var(--ink)"
+          fillOpacity={0.9}
+          className="triangulation-node"
+          style={{ animationDelay: '0ms' }}
+        />
         <text
           x={CX}
           y={CY + 1}
@@ -113,6 +131,9 @@ export function TriangulationDiagram({ sources }: { sources: SourceCitation[] })
           const ly = CY + labelR * Math.sin(angle);
           const anchor = lx < CX - 10 ? 'end' : lx > CX + 10 ? 'start' : 'middle';
 
+          const nodeDelay = active
+            ? 280 + activeIndex(type) * 130
+            : inactiveDelay;
           return (
             <g key={type}>
               <circle
@@ -124,9 +145,21 @@ export function TriangulationDiagram({ sources }: { sources: SourceCitation[] })
                 stroke={color}
                 strokeWidth={active ? 0 : 1}
                 strokeOpacity={0.3}
+                className="triangulation-node"
+                style={{ animationDelay: `${nodeDelay}ms` }}
               />
               {active && (
-                <circle cx={sx} cy={sy} r={R_SAT + 3} fill="none" stroke={color} strokeWidth={1} strokeOpacity={0.35} />
+                <circle
+                  cx={sx}
+                  cy={sy}
+                  r={R_SAT + 3}
+                  fill="none"
+                  stroke={color}
+                  strokeWidth={1}
+                  strokeOpacity={0.35}
+                  className="triangulation-node"
+                  style={{ animationDelay: `${nodeDelay + 60}ms` }}
+                />
               )}
               <text
                 x={lx}

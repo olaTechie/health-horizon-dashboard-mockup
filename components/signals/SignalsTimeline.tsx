@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { TierDot } from '@/components/shared/TierBadge';
 import { AGENT_LABEL } from '@/components/shared/AgentIcon';
+import { EmptyRadar } from '@/components/shared/EmptyRadar';
 import type { Signal, AgentId } from '@/lib/types';
 
 const AGENTS: AgentId[] = ['infectious', 'occupational', 'regulatory', 'climate', 'psychosocial'];
@@ -61,8 +62,8 @@ export function SignalsTimeline({ signals, onHover }: SignalsTimelineProps) {
 
   if (signals.length === 0) {
     return (
-      <div className="flex-1 flex items-center justify-center text-[var(--ink-tertiary)] text-sm">
-        No signals match the current filters.
+      <div className="flex-1 flex items-center justify-center">
+        <EmptyRadar />
       </div>
     );
   }

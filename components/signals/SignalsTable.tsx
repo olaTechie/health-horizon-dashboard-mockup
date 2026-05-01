@@ -7,6 +7,7 @@ import { TierBadge } from '@/components/shared/TierBadge';
 import { AgentIcon } from '@/components/shared/AgentIcon';
 import { PpaChip } from '@/components/shared/PpaChip';
 import { ConfidenceMeter } from '@/components/shared/ConfidenceMeter';
+import { EmptyRadar } from '@/components/shared/EmptyRadar';
 import { fmtDate } from '@/lib/format';
 import type { Signal } from '@/lib/types';
 
@@ -170,8 +171,8 @@ export function SignalsTable({ signals, onHover, sortKey, sortDir, onSort }: Sig
           ))}
           {sorted.length === 0 && (
             <tr>
-              <td colSpan={10} className="px-6 py-12 text-center text-[var(--ink-tertiary)] text-sm">
-                No signals match the current filters.
+              <td colSpan={10} className="p-0">
+                <EmptyRadar />
               </td>
             </tr>
           )}

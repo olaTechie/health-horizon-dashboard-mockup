@@ -5,6 +5,7 @@ import { TierBadge } from '@/components/shared/TierBadge';
 import { AgentIcon, AGENT_LABEL } from '@/components/shared/AgentIcon';
 import { PpaChip } from '@/components/shared/PpaChip';
 import { ConfidenceMeter } from '@/components/shared/ConfidenceMeter';
+import { EmptyRadar } from '@/components/shared/EmptyRadar';
 import type { Signal } from '@/lib/types';
 
 interface SignalsCardGridProps {
@@ -15,8 +16,8 @@ interface SignalsCardGridProps {
 export function SignalsCardGrid({ signals, onHover }: SignalsCardGridProps) {
   if (signals.length === 0) {
     return (
-      <div className="flex-1 flex items-center justify-center text-[var(--ink-tertiary)] text-sm">
-        No signals match the current filters.
+      <div className="flex-1 flex items-center justify-center">
+        <EmptyRadar />
       </div>
     );
   }
