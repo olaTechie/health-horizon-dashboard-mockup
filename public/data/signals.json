@@ -1,0 +1,3228 @@
+[
+  {
+    "id": "SIG-2026-Q2-001",
+    "title": "Mpox clade Ib sustained transmission across Central and East Africa",
+    "summary": "WHO has reported continued geographic expansion of clade Ib human-to-human transmission with confirmed cases now in 6 non-endemic countries; Shell rotational workforce in Niger Delta and Bonga FPSO transit corridors face material exposure risk requiring immediate protocol activation.",
+    "tier": "action",
+    "ppa": [
+      "protect",
+      "access"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "EMEA",
+      "global"
+    ],
+    "affectedAssets": [
+      "A-NDA",
+      "A-BONGA"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-02-14",
+    "lastUpdated": "2026-04-28",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-04-23-MPX",
+        "title": "Mpox clade Ib — Central and East Africa update",
+        "date": "2026-04-23",
+        "url": "https://www.who.int/emergencies/disease-outbreak-news"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38912210",
+        "title": "Genomic surveillance of MPXV clade Ib in cross-border transmission clusters",
+        "date": "2026-03-12"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "bioRxiv",
+        "identifier": "2026.03.04.583012",
+        "title": "Sustained human-to-human transmission of MPXV clade Ib: epidemiological evidence",
+        "date": "2026-03-04"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-MPX-04",
+        "title": "Rapid Risk Assessment: Mpox clade Ib expansion in Africa",
+        "date": "2026-04-09"
+      },
+      {
+        "type": "industry",
+        "publisher": "IPIECA",
+        "identifier": "IPIECA-HSE-2026-03",
+        "title": "Pandemic preparedness guidance for upstream rotational workforces",
+        "date": "2026-04-15"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260418",
+        "title": "Mpox — Africa (43): expanded geographic footprint confirmed",
+        "date": "2026-04-18"
+      }
+    ],
+    "triangulationCount": 6,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Activate tier-2 medevac protocol for Niger Delta rotations and brief HSSE leadership on PPE stockpile adequacy and contractor pre-travel screening within 72 hours.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-14",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "Pattern match on cross-border clade Ib clusters in PubMed and ProMED feeds"
+      },
+      {
+        "date": "2026-02-21",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "Lead infectious disease physician confirmed signal materiality for rotational workforce"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "infectious",
+        "event": "Triangulation",
+        "detail": "WHO DON corroborated independent of bioRxiv preprint; ECDC RRA initiated"
+      },
+      {
+        "date": "2026-04-09",
+        "agent": "infectious",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention following ECDC RRA publication"
+      },
+      {
+        "date": "2026-04-23",
+        "agent": "infectious",
+        "event": "Tier escalation",
+        "detail": "Attention → Action: 6th non-endemic country confirmed by WHO DON"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-002",
+    "title": "H5N1 avian influenza mammalian spillover events detected in South Asia and Americas",
+    "summary": "Multiple confirmed H5N1 infections in dairy farm workers (US) and poultry handlers (Bangladesh) signal heightened zoonotic spillover pressure; Shell QGC and Prelude FLNG crew rotation through affected agricultural catchment areas warrants enhanced screening protocols.",
+    "tier": "watch",
+    "ppa": [
+      "protect",
+      "access"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "AMER",
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-PRELUDE",
+      "A-QGC"
+    ],
+    "affectedSegments": [
+      "integrated-gas",
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-08",
+    "lastUpdated": "2026-04-20",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-03-15-H5N1",
+        "title": "H5N1 — United States: additional human cases in dairy farm workers",
+        "date": "2026-03-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:39014776",
+        "title": "Mammalian-adaptive mutations in H5N1 clade 2.3.4.4b isolated from human cases",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-H5N1-02",
+        "title": "Rapid Risk Assessment: avian influenza A(H5N1) in humans",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "bioRxiv",
+        "identifier": "2026.02.11.541987",
+        "title": "Phylogenetic analysis of H5N1 isolates from US dairy herds 2025-2026",
+        "date": "2026-02-11"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260322",
+        "title": "H5N1 — Americas, Asia (12): animal-human interface events",
+        "date": "2026-03-22"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-12 Medical Emergency Response",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Update pre-travel health briefings for APAC crew rotation hubs to include H5N1 zoonotic risk advisory and verify antiviral stockpile currency at QGC and Prelude medical stations.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-08",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "GISAID sequence upload flagged mammalian-adaptive mutations in H5N1 clade 2.3.4.4b"
+      },
+      {
+        "date": "2026-01-22",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "Virologist review confirmed relevance to rotational workforce in agricultural catchment areas"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "infectious",
+        "event": "Triangulation",
+        "detail": "WHO DON publication corroborated GISAID signal; ECDC RRA commissioned"
+      },
+      {
+        "date": "2026-04-20",
+        "agent": "infectious",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention following multiple confirmed spillover events across two continents"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-003",
+    "title": "Marburg virus Rwanda follow-on surveillance detects cluster in eastern DRC border zone",
+    "summary": "Post-outbreak surveillance in Rwanda has identified a phylogenetically linked Marburg cluster in DRC bordering Goma; while contained, the geographic proximity to Shell NDA transit routes and the absence of approved therapeutics warrants maintained watchlist status.",
+    "tier": "watch",
+    "ppa": [
+      "protect",
+      "access"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NDA",
+      "A-BONGA"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-15",
+    "lastUpdated": "2026-03-30",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-02-10-MVD",
+        "title": "Marburg virus disease — DRC: new cluster under investigation",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38801543",
+        "title": "Whole-genome sequencing confirms phylogenetic link between Rwanda and DRC Marburg isolates",
+        "date": "2026-02-25"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260218",
+        "title": "Marburg virus — DRC: border surveillance update",
+        "date": "2026-02-18"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-MVD-01",
+        "title": "Rapid Risk Assessment: Marburg virus disease DRC-Rwanda spillover",
+        "date": "2026-03-01"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Maintain enhanced pre-deployment screening for NDA-bound contractors transiting Goma and review medical evacuation agreements with Kigali referral hospitals.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-15",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "ProMED alert flagged border-zone case cluster post-Rwanda outbreak"
+      },
+      {
+        "date": "2026-02-10",
+        "agent": "infectious",
+        "event": "WHO confirmation",
+        "detail": "WHO DON issued DON-2026-02-10-MVD confirming DRC cluster investigation"
+      },
+      {
+        "date": "2026-02-25",
+        "agent": "infectious",
+        "event": "Triangulation",
+        "detail": "PubMed genomic paper confirmed phylogenetic link; risk materiality assessed as Watch"
+      },
+      {
+        "date": "2026-03-30",
+        "agent": "infectious",
+        "event": "Routine review",
+        "detail": "No escalation — cluster contained; watchlist maintained per IHR Article 12 criteria"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-004",
+    "title": "Carbapenem-resistant Acinetobacter baumannii surge in Indian ICUs affects medevac referral pathway",
+    "summary": "CRAB prevalence exceeding 85% in tertiary ICUs across Mumbai, Chennai and Hyderabad compromises the safety assumption underlying Shell medevac pathways routing patients to Indian hospital referral centres; immediate pathway reassessment required for APAC offshore assets.",
+    "tier": "attention",
+    "ppa": [
+      "access",
+      "protect"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-PRELUDE",
+      "A-QGC",
+      "A-BUKOM"
+    ],
+    "affectedSegments": [
+      "integrated-gas",
+      "downstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-20",
+    "lastUpdated": "2026-04-15",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:39102345",
+        "title": "Carbapenem-resistant Acinetobacter baumannii in Indian ICUs: a multicentre surveillance study 2025-2026",
+        "date": "2026-02-14"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38934210",
+        "title": "Molecular epidemiology of CRAB clones circulating in South Asian healthcare settings",
+        "date": "2026-01-28"
+      },
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-03-05-AMR",
+        "title": "AMR priority pathogen alert: CRAB South Asia",
+        "date": "2026-03-05"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-AMR-01",
+        "title": "AMR in healthcare settings: implications for medical evacuation",
+        "date": "2026-03-18"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-MED-2026-01",
+        "title": "Medical evacuation pathway risk assessment: antimicrobial resistance considerations",
+        "date": "2026-04-01"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-12 Medical Emergency Response",
+      "MHMS-09 Communicable Disease Control"
+    ],
+    "recommendedAction": "Formally reassess APAC medevac primary and secondary hospital designations against current CRAB prevalence data and update medical emergency response plans within 30 days.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-20",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "PubMed surveillance study flagged >85% CRAB prevalence in Indian ICU network"
+      },
+      {
+        "date": "2026-02-05",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "Clinical microbiologist confirmed material threat to medevac pathway assumptions"
+      },
+      {
+        "date": "2026-03-05",
+        "agent": "infectious",
+        "event": "WHO corroboration",
+        "detail": "WHO DON AMR alert for South Asia confirmed signal"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "infectious",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: IOGP medevac guidance paper published highlighting systemic risk"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-005",
+    "title": "Circulating vaccine-derived poliovirus type 2 detected in Yemen with cross-border spread risk",
+    "summary": "cVDPV2 cases confirmed in Aden and Hadramawt governorates amid collapsed vaccination infrastructure; low direct workforce exposure but signals a weakening of regional health system resilience relevant to Shell EMEA field medical response assumptions.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-01",
+    "lastUpdated": "2026-03-25",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-02-28-POLIO",
+        "title": "Circulating vaccine-derived poliovirus type 2 — Yemen",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38870124",
+        "title": "Poliovirus emergence in conflict-affected settings: Yemen 2024-2026",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260305",
+        "title": "Polio, cVDPV2 — Yemen (03): case count update",
+        "date": "2026-03-05"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control"
+    ],
+    "recommendedAction": "Verify all Shell personnel deploying to EMEA field locations have current OPV and IPV vaccination status on record and flag to regional medical adviser.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-01",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "WHO GPEI dashboard flagged cVDPV2 environmental detection in Yemen water samples"
+      },
+      {
+        "date": "2026-02-28",
+        "agent": "infectious",
+        "event": "WHO confirmation",
+        "detail": "WHO DON confirmed human cases in two governorates"
+      },
+      {
+        "date": "2026-03-25",
+        "agent": "infectious",
+        "event": "Routine review",
+        "detail": "Signal maintained at Watch; no direct Shell workforce exposure identified"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-006",
+    "title": "Lassa fever Nigeria peak season extends into April driven by rodent reservoir range shift",
+    "summary": "NCDC data show the 2026 Lassa season peaked three weeks later than the 2015-2025 median with confirmed cases in states previously considered low-endemicity; Shell NDA field camps in Imo and Delta states face heightened exposure risk beyond the traditional January-March window.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NDA"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-28",
+    "lastUpdated": "2026-04-10",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-04-02-LASSA",
+        "title": "Lassa fever — Nigeria: 2026 seasonal update",
+        "date": "2026-04-02"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38763401",
+        "title": "Shifting seasonality of Lassa fever in Nigeria: climate and land-use drivers",
+        "date": "2026-01-15"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260408",
+        "title": "Lassa fever — Nigeria (12): late-season persistence 2026",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-LASSA-01",
+        "title": "Lassa fever risk to travellers and expatriate workers in Nigeria",
+        "date": "2026-03-15"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Extend Lassa fever rodent-control and camp hygiene protocols at NDA field camps through May 2026 and brief camp medics on updated seasonal risk window.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-28",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "ProMED reports showed case counts 40% above 5-year average for January"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "ECDC RRA confirmed extended geographic range and late-season pattern"
+      },
+      {
+        "date": "2026-04-10",
+        "agent": "infectious",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; no Shell personnel cases but camp hygiene audit triggered"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-007",
+    "title": "Dengue serotype 3 resurgence across Southeast Asia with immunologically naive population risk",
+    "summary": "DENV-3 has re-emerged as the dominant serotype in Thailand, Vietnam and the Philippines after a decade of DENV-1/2 dominance, exposing a large immunologically naive workforce cohort; Shell Bukom and Nanhai sites are within high-transmission zones during the May-September peak.",
+    "tier": "attention",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-BUKOM",
+      "A-NANHAI"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-10",
+    "lastUpdated": "2026-04-22",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-04-12-DENV",
+        "title": "Dengue — Southeast Asia: serotype shift and case surge Q1 2026",
+        "date": "2026-04-12"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:39023871",
+        "title": "Re-emergence of dengue virus serotype 3 in Southeast Asia: implications for herd immunity",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38891204",
+        "title": "Serotype-specific dengue incidence trends in Singapore 2020-2026",
+        "date": "2026-02-14"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-DENV-02",
+        "title": "Dengue fever risk in travellers to Southeast Asia: 2026 update",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "social",
+        "publisher": "ProMED",
+        "identifier": "ProMED-20260415",
+        "title": "Dengue — Southeast Asia (22): record case counts Thailand, Vietnam",
+        "date": "2026-04-15"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Issue site health advisory to Bukom and Nanhai workforce covering DENV-3 serotype naive risk, vector control audit schedule, and criteria for work-suspension during dengue fever illness.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-10",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "GISAID and PubMed showed DENV-3 sequences rising to >60% of isolates in Singapore"
+      },
+      {
+        "date": "2026-02-18",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "Tropical medicine specialist confirmed naive population hypothesis and seasonal risk window"
+      },
+      {
+        "date": "2026-04-08",
+        "agent": "infectious",
+        "event": "Triangulation",
+        "detail": "ECDC RRA corroborated WHO DON signal independently"
+      },
+      {
+        "date": "2026-04-22",
+        "agent": "infectious",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: record Q1 case counts across three APAC countries confirmed"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-008",
+    "title": "Measles resurgence across Western Europe driven by vaccination coverage gaps",
+    "summary": "ECDC reports confirmed measles outbreaks in Germany, Romania and Italy exceeding WHO elimination thresholds, linked to post-pandemic immunisation catch-up deficits; Shell Rheinland, Pernis and Moerdijk site workers born 1970-1985 may lack a second MMR dose on record.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "infectious",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-RHEINLAND",
+      "A-PERNIS",
+      "A-MOERDIJK"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-20",
+    "lastUpdated": "2026-04-05",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-MEAS-03",
+        "title": "Measles — European region: outbreak risk assessment Q1 2026",
+        "date": "2026-03-10"
+      },
+      {
+        "type": "who-alert",
+        "publisher": "WHO DON",
+        "identifier": "DON-2026-03-22-MEASLES",
+        "title": "Measles resurgence — WHO European Region 2026",
+        "date": "2026-03-22"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38856731",
+        "title": "Measles outbreak dynamics in post-pandemic Europe: epidemiological modelling",
+        "date": "2026-02-05"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control"
+    ],
+    "recommendedAction": "Conduct occupational health records audit for EMEA refinery workers to identify incomplete MMR vaccination status and offer catch-up immunisation through site medical services.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-20",
+        "agent": "infectious",
+        "event": "NLP detection",
+        "detail": "ECDC surveillance data showed outbreak notifications tripling vs 2025 Q1"
+      },
+      {
+        "date": "2026-03-10",
+        "agent": "infectious",
+        "event": "Expert validation",
+        "detail": "ECDC RRA confirmed elimination-threshold breach in three EU member states"
+      },
+      {
+        "date": "2026-04-05",
+        "agent": "infectious",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; immunity gap in 1970-1985 birth cohort confirmed as focus area"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-009",
+    "title": "NIOSH and ACGIH propose revised benzene biomonitoring BEI lowering to 25 µg/g creatinine",
+    "summary": "Concurrent NIOSH intelligence notice and ACGIH TLV-BEI revision proposal would reduce the benzene urinary BEI from 500 to 25 µg/g creatinine, triggering mandatory biological monitoring programme redesign across Shell downstream refinery populations.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "AMER",
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-PERNIS",
+      "A-DEERPARK",
+      "A-NORCO"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-12",
+    "lastUpdated": "2026-04-01",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-01",
+        "title": "NIOSH Intelligence Notice: benzene biological exposure index revision",
+        "date": "2026-01-20"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38721034",
+        "title": "Benzene biomarkers and haematotoxicity at low-level occupational exposures",
+        "date": "2026-01-08"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-02",
+        "title": "Benzene monitoring programme implications for downstream refinery operations",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38890312",
+        "title": "ACGIH TLV-BEI rationale document review: benzene urinary metabolites 2026",
+        "date": "2026-02-20"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Commission gap analysis of current benzene biological monitoring programmes against proposed 25 µg/g BEI threshold across Pernis, Deer Park and Norco refinery populations.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-12",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed alert matched haematotoxicity paper citing sub-500 µg/g adverse signals"
+      },
+      {
+        "date": "2026-01-20",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "NIOSH intelligence notice retrieved from NIOSH publications feed"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "occupational",
+        "event": "Triangulation",
+        "detail": "IOGP industry paper corroborated regulatory direction; signal maintained at Watch"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-010",
+    "title": "PFAS firefighting foam phase-out audit reveals legacy AFFF soil contamination at Shell terminals",
+    "summary": "EPA PFAS Strategic Roadmap enforcement actions and EU POP Regulation Article 4 requirements are converging on mandatory AFFF replacement timelines; internal audit has flagged six Shell terminals with legacy AFFF systems requiring immediate inventory assessment and worker exposure evaluation.",
+    "tier": "attention",
+    "ppa": [
+      "protect",
+      "promote"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "AMER",
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-DEERPARK",
+      "A-NORCO",
+      "A-PERNIS"
+    ],
+    "affectedSegments": [
+      "downstream",
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-05",
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "OSHA",
+        "identifier": "OSHA-2026-0001",
+        "title": "PFAS in the workplace: enforcement guidance update",
+        "date": "2026-01-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38823014",
+        "title": "Occupational PFAS exposure in firefighting foam application workers: biomonitoring study",
+        "date": "2026-02-01"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-03",
+        "title": "NIOSH current intelligence bulletin: PFAS occupational exposure limits",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-03",
+        "title": "AFFF phase-out roadmap for oil and gas facilities",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38967234",
+        "title": "Health effects of long-chain PFAS in petroleum industry workers: systematic review",
+        "date": "2026-03-15"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE",
+      "MHMS-03 Environmental Health"
+    ],
+    "recommendedAction": "Commission cross-asset AFFF inventory audit and worker blood-serum PFAS biomonitoring baseline programme across all six flagged terminal sites before Q3 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-05",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "EPA PFAS Strategic Roadmap milestone enforcement actions triggered internal review"
+      },
+      {
+        "date": "2026-02-01",
+        "agent": "occupational",
+        "event": "Expert validation",
+        "detail": "Industrial hygienist confirmed six terminals with legacy AFFF systems in scope"
+      },
+      {
+        "date": "2026-03-20",
+        "agent": "occupational",
+        "event": "Triangulation",
+        "detail": "IOGP roadmap paper and NIOSH intelligence bulletin corroborated independently"
+      },
+      {
+        "date": "2026-04-25",
+        "agent": "occupational",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: internal audit findings elevated signal materiality"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-011",
+    "title": "IARC Working Group 174 re-evaluates diesel engine exhaust upgrading carcinogenicity classification",
+    "summary": "The IARC Monograph 174 process is incorporating new mechanistic evidence that may strengthen the Group 1 carcinogenicity designation for diesel exhaust with specific exposure-response data; this could tighten regulatory exposure standards applied to Shell upstream and downstream fleet operations.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "global"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN",
+      "A-DEERPARK",
+      "A-NORCO"
+    ],
+    "affectedSegments": [
+      "upstream",
+      "downstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-08",
+    "lastUpdated": "2026-04-12",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "IARC",
+        "identifier": "IARC-MON-174-DRAFT",
+        "title": "IARC Monograph 174: diesel engine exhaust — draft evaluation summary",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38812456",
+        "title": "Diesel exhaust exposure and lung cancer risk: updated dose-response meta-analysis",
+        "date": "2026-02-08"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38934567",
+        "title": "Mechanistic evidence for diesel particulate matter genotoxicity at occupational levels",
+        "date": "2026-03-10"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-04",
+        "title": "Diesel exhaust management in oil and gas field operations",
+        "date": "2026-04-01"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene"
+    ],
+    "recommendedAction": "Monitor IARC Monograph 174 publication timeline and pre-position a diesel exhaust exposure assessment update for Permian mobile fleet and refinery operations to enable rapid compliance response.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-08",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed alert flagged updated dose-response meta-analysis citing IARC reclassification process"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "occupational",
+        "event": "Expert validation",
+        "detail": "Occupational toxicologist confirmed IARC WG 174 scope includes petroleum fleet exposure scenarios"
+      },
+      {
+        "date": "2026-04-12",
+        "agent": "occupational",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; IARC publication expected late 2026-2027"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-012",
+    "title": "Crystalline silica dust exposure in downstream catalyst handling operations exceeds new OSHA PEL",
+    "summary": "OSHA enforcement of the 2016 crystalline silica rule at 0.05 mg/m³ TWA is intensifying with new directed inspection campaigns at petroleum refineries; sampling data at two Shell downstream sites indicate tasks involving spent catalyst handling may periodically exceed the action level.",
+    "tier": "attention",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-DEERPARK",
+      "A-NORCO"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-18",
+    "lastUpdated": "2026-04-18",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "OSHA",
+        "identifier": "OSHA-2026-0008",
+        "title": "Crystalline silica: directed inspection programme for petroleum refineries 2026",
+        "date": "2026-01-25"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38734890",
+        "title": "Respirable crystalline silica in spent fluid catalytic cracking catalyst: field measurements",
+        "date": "2026-01-18"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38901234",
+        "title": "Silicosis risk in petrochemical catalyst handling: cross-sectional study",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-05",
+        "title": "NIOSH hazard review: crystalline silica in petroleum refining",
+        "date": "2026-03-05"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Conduct task-based silica exposure assessment for catalyst handling activities at Deer Park and Norco and implement engineering controls or enhanced RPE programme before next OSHA inspection cycle.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-18",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed paper on FCC catalyst silica exposures matched to Deer Park and Norco operational profiles"
+      },
+      {
+        "date": "2026-01-25",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "OSHA directed inspection programme announcement retrieved"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "occupational",
+        "event": "Internal sampling",
+        "detail": "Site IH sampling at Deer Park identified two tasks exceeding action level of 0.025 mg/m³"
+      },
+      {
+        "date": "2026-04-18",
+        "agent": "occupational",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: internal sampling confirmed exceedances corroborated by NIOSH guidance"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-013",
+    "title": "Hydrogen embrittlement failure risk increases worker exposure during high-pressure hydrogen operations",
+    "summary": "As Shell scales hydrogen production at Holland Hydrogen 1, emerging metallurgical data indicate higher-than-modelled hydrogen embrittlement failure rates in certain high-pressure valve assemblies, creating potential for acute pressure-release incidents with worker injury potential.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-HOL-HYD",
+      "A-ETC-AMS"
+    ],
+    "affectedSegments": [
+      "renewables"
+    ],
+    "horizon": "12mo",
+    "confidence": "low",
+    "firstDetected": "2026-02-25",
+    "lastUpdated": "2026-04-08",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38856012",
+        "title": "Hydrogen embrittlement of high-strength steels in pressurized hydrogen service: failure analysis",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-05",
+        "title": "Worker safety in high-pressure hydrogen operations: emerging risk considerations",
+        "date": "2026-03-15"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-SB-2026-02",
+        "title": "HSE safety bulletin: hydrogen embrittlement in industrial hydrogen systems",
+        "date": "2026-03-22"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Commission independent metallurgical inspection of high-pressure valve assemblies at Holland Hydrogen 1 and update process safety risk register with hydrogen embrittlement failure modes.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-25",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed failure analysis paper flagged embrittlement rates exceeding design specifications"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "occupational",
+        "event": "Expert validation",
+        "detail": "Process safety engineer reviewed IOGP guidance; HSE safety bulletin corroborated"
+      },
+      {
+        "date": "2026-04-08",
+        "agent": "occupational",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; metallurgical inspection scheduled for Q3 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-014",
+    "title": "Asbestos legacy material assessment triggered by North Sea decommissioning programme expansion",
+    "summary": "Accelerated North Sea decommissioning under the NSTAB programme is uncovering asbestos-containing materials in asset categories not previously captured in legacy management plans; Nelson and Shearwater platforms are within scope of the revised HSE ACM inventory requirements.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-03-01",
+    "lastUpdated": "2026-04-20",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-SB-2026-04",
+        "title": "HSE guidance: asbestos-containing materials in offshore decommissioning",
+        "date": "2026-03-10"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38901876",
+        "title": "Mesothelioma latency and legacy asbestos exposures in North Sea offshore workers",
+        "date": "2026-02-15"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-06",
+        "title": "Asbestos management in offshore asset decommissioning: IOGP guidance note",
+        "date": "2026-03-25"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Update ACM register for Nelson and Shearwater platforms to align with revised HSE offshore decommissioning guidance and ensure contractor COSHH risk assessments are current.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-01",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "HSE guidance update on ACM in decommissioning retrieved from HSE publications feed"
+      },
+      {
+        "date": "2026-03-25",
+        "agent": "occupational",
+        "event": "Expert validation",
+        "detail": "IOGP guidance note confirmed scope includes asset categories on Nelson and Shearwater"
+      },
+      {
+        "date": "2026-04-20",
+        "agent": "occupational",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; ACM register audit scheduled during next planned maintenance shutdown"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-015",
+    "title": "Mercury exposure risk elevated during offshore decommissioning of legacy gas processing equipment",
+    "summary": "Decommissioning of mercury-contaminated gas processing equipment on UKCS platforms is generating airborne mercury exposures above WEL in confined spaces; OEUK and HSE have both issued updated guidance that is not yet reflected in Shell contractor COSHH assessments.",
+    "tier": "attention",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-22",
+    "lastUpdated": "2026-04-14",
+    "sources": [
+      {
+        "type": "industry",
+        "publisher": "OEUK",
+        "identifier": "OEUK-2026-01",
+        "title": "Mercury in decommissioning offshore gas processing equipment: OEUK guidance",
+        "date": "2026-01-28"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-SB-2026-03",
+        "title": "HSE safety bulletin: mercury in offshore gas processing decommissioning",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38745678",
+        "title": "Occupational mercury exposure in natural gas processing decommissioning: a case series",
+        "date": "2026-01-22"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38889012",
+        "title": "Urinary mercury biomonitoring in UKCS offshore decommissioning workers",
+        "date": "2026-03-05"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Update contractor COSHH assessments for mercury-containing equipment decommissioning on Nelson and Shearwater to incorporate OEUK and HSE 2026 guidance, and mandate pre- and post-task urine mercury biomonitoring.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-22",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed case series from UKCS decommissioning showed WEL exceedances during confined-space work"
+      },
+      {
+        "date": "2026-01-28",
+        "agent": "occupational",
+        "event": "Industry guidance",
+        "detail": "OEUK guidance note retrieved confirming scope applies to legacy North Sea gas platforms"
+      },
+      {
+        "date": "2026-02-05",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "HSE safety bulletin corroborated OEUK signal independently"
+      },
+      {
+        "date": "2026-04-14",
+        "agent": "occupational",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: internal COSHH gap confirmed; biomonitoring protocol not in place"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-016",
+    "title": "Naturally occurring radioactive material accumulation identified in Permian produced water handling systems",
+    "summary": "Scale analysis from Permian Basin produced water pipeline infrastructure shows NORM activity levels approaching the 74 Bq/g exemption threshold in certain filter cake deposits, requiring updated radiation protection protocols for maintenance crews.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "occupational",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-10",
+    "lastUpdated": "2026-04-02",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38801234",
+        "title": "NORM in Permian Basin produced water systems: activity concentration survey",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-04",
+        "title": "NIOSH guidance: naturally occurring radioactive material in oil and gas operations",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-OCC-2026-07",
+        "title": "NORM management in produced water systems: IOGP guidance revision",
+        "date": "2026-03-15"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene"
+    ],
+    "recommendedAction": "Commission radiological survey of produced water filter cake deposits at Permian operations and update NORM radiation protection protocols for pipe maintenance crews.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-10",
+        "agent": "occupational",
+        "event": "NLP detection",
+        "detail": "PubMed survey paper identified Permian Basin as high NORM accumulation zone"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "occupational",
+        "event": "Regulatory detection",
+        "detail": "NIOSH guidance update retrieved; IOGP revision corroborated"
+      },
+      {
+        "date": "2026-04-02",
+        "agent": "occupational",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; radiological survey scoped for Q3 2026 maintenance window"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-017",
+    "title": "NIOSH heat-stress NPRM advances toward final rule with mandatory WBGT exposure limits",
+    "summary": "NIOSH has submitted the heat-stress final rule package to OMB review following the close of the public comment period; if finalised on the projected Q3 2026 timeline, Shell Permian and QGC exterior maintenance schedules will require mandatory WBGT monitoring and work-rest regimen implementation within 90 days of publication.",
+    "tier": "action",
+    "ppa": [
+      "protect",
+      "promote"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "AMER",
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN",
+      "A-QGC"
+    ],
+    "affectedSegments": [
+      "upstream",
+      "integrated-gas"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-06",
+    "lastUpdated": "2026-04-29",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-06",
+        "title": "Heat stress in outdoor and indoor work environments: proposed rule summary",
+        "date": "2026-01-10"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "OSHA",
+        "identifier": "OSHA-2026-0012",
+        "title": "OSHA NPRM: occupational exposure to heat in outdoor and indoor work environments",
+        "date": "2026-01-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38723456",
+        "title": "WBGT-based exposure limits and productivity impacts in US oil and gas operations",
+        "date": "2026-02-01"
+      },
+      {
+        "type": "industry",
+        "publisher": "IPIECA",
+        "identifier": "IPIECA-HSE-2026-04",
+        "title": "IPIECA industry guidance on heat stress compliance for onshore upstream operations",
+        "date": "2026-03-10"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-07",
+        "title": "NIOSH criteria document: heat stress final recommendations",
+        "date": "2026-04-01"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-04 Heat Stress Management",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Convene cross-functional task force to develop WBGT-compliant work-rest regimen protocols for Permian and QGC exterior maintenance before Q3 2026 rule publication date.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-06",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "OSHA regulatory agenda published with heat-stress NPRM listed for Q1 2026 publication"
+      },
+      {
+        "date": "2026-01-15",
+        "agent": "regulatory",
+        "event": "NPRM publication",
+        "detail": "OSHA-2026-0012 formally published in Federal Register; 60-day comment period opened"
+      },
+      {
+        "date": "2026-02-15",
+        "agent": "regulatory",
+        "event": "Expert validation",
+        "detail": "NIOSH criteria document reviewed; WBGT thresholds assessed against Permian summer conditions"
+      },
+      {
+        "date": "2026-03-18",
+        "agent": "regulatory",
+        "event": "Triangulation",
+        "detail": "IPIECA industry guidance corroborated regulatory direction independently"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "regulatory",
+        "event": "Tier escalation",
+        "detail": "Attention → Action: comment period closed; OMB review initiated per Federal Register notice"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-018",
+    "title": "OEUK medical fitness 2026 guidance update revises offshore fitness standards for cardiovascular risk",
+    "summary": "OEUK has published revised offshore medical fitness guidance tightening cardiovascular pre-employment thresholds and introducing mandatory 12-lead ECG for workers over 45 with BMI ≥30; Shell UKCS workforce mobilisation processes require updating before the 1 July 2026 implementation date.",
+    "tier": "watch",
+    "ppa": [
+      "access",
+      "promote"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-02-18",
+    "lastUpdated": "2026-04-26",
+    "sources": [
+      {
+        "type": "industry",
+        "publisher": "OEUK",
+        "identifier": "OEUK-2026-02",
+        "title": "Guidance on medical aspects of fitness for offshore work: 2026 revision",
+        "date": "2026-02-18"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-SB-2026-05",
+        "title": "HSE endorsement of OEUK 2026 medical fitness update",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38845671",
+        "title": "Cardiovascular risk stratification in offshore workers: evidence base for revised thresholds",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-MED-2026-02",
+        "title": "Offshore medical fitness standards: international alignment with OEUK 2026 revision",
+        "date": "2026-03-20"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-01 Medical Fitness for Work",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Update Shell UKCS pre-employment and periodic medical examination protocols to incorporate OEUK 2026 cardiovascular thresholds and 12-lead ECG requirement before 1 July 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-18",
+        "agent": "regulatory",
+        "event": "Guidance published",
+        "detail": "OEUK-2026-02 retrieved from OEUK publications portal; cardiovascular changes assessed"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "regulatory",
+        "event": "Regulatory endorsement",
+        "detail": "HSE endorsed OEUK revision; confirms regulatory force for UKCS operations"
+      },
+      {
+        "date": "2026-03-20",
+        "agent": "regulatory",
+        "event": "Triangulation",
+        "detail": "IOGP international alignment note confirmed scope extends to international contractors"
+      },
+      {
+        "date": "2026-04-26",
+        "agent": "regulatory",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: 1 July implementation deadline creates 65-day compliance window"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-019",
+    "title": "HSE revises offshore installation manager competence and certification requirements",
+    "summary": "HSE has issued a Competence Management consultation proposing revised Offshore Installation Manager certification standards that will require gap analysis against current Shell OIM competency frameworks and may extend remobilisation lead times for UKCS platforms.",
+    "tier": "watch",
+    "ppa": [
+      "access"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-03-10",
+    "lastUpdated": "2026-04-15",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-CONSULT-2026-01",
+        "title": "HSE consultation: offshore installation manager competence and certification revision",
+        "date": "2026-03-10"
+      },
+      {
+        "type": "industry",
+        "publisher": "OEUK",
+        "identifier": "OEUK-2026-03",
+        "title": "Industry response to HSE OIM competence consultation",
+        "date": "2026-04-01"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-REG-2026-01",
+        "title": "Offshore competence assurance: international perspective on UK consultation",
+        "date": "2026-04-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-06 Contractor HSSE",
+      "MHMS-01 Medical Fitness for Work"
+    ],
+    "recommendedAction": "Submit formal response to HSE consultation before the closing date and commission gap analysis of current Shell OIM competency framework against proposed certification requirements.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-10",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "HSE consultation document retrieved from HSE publications feed"
+      },
+      {
+        "date": "2026-04-01",
+        "agent": "regulatory",
+        "event": "Industry response",
+        "detail": "OEUK response flagged potential 6-12 month lead-time implications for OIM remobilisation"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "regulatory",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; consultation closes 30 June 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-020",
+    "title": "EU-OSHA draft psychosocial risk directive imposes mandatory workplace mental health risk assessment",
+    "summary": "The European Commission has tabled a draft directive requiring employers to conduct mandatory psychosocial risk assessments and implement management measures by 2028; Shell European operations spanning Netherlands, Germany and UK would fall under scope, requiring new reporting infrastructure and HSSE programme integration.",
+    "tier": "attention",
+    "ppa": [
+      "promote",
+      "protect"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-PERNIS",
+      "A-MOERDIJK",
+      "A-RHEINLAND"
+    ],
+    "affectedSegments": [
+      "downstream",
+      "renewables"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-05",
+    "lastUpdated": "2026-04-20",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "EU-OSHA",
+        "identifier": "EU-OSHA-DIR-2026-01",
+        "title": "Draft EU directive on psychosocial risks at work: consultation text",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "EU-OSHA",
+        "identifier": "EU-OSHA-GUIDE-2026-01",
+        "title": "EU-OSHA guidance note: employer obligations under draft psychosocial directive",
+        "date": "2026-03-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38867234",
+        "title": "Psychosocial risk assessment frameworks in European industrial workplaces",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "industry",
+        "publisher": "IPIECA",
+        "identifier": "IPIECA-HSE-2026-05",
+        "title": "IPIECA briefing: EU psychosocial directive implications for oil and gas operators",
+        "date": "2026-04-05"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Initiate a scoping exercise to map current Shell European psychosocial risk assessment practices against draft directive requirements and identify gaps requiring programme development before 2028 implementation.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-05",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "EU-OSHA consultation text published; scope assessed against Shell European entity list"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "regulatory",
+        "event": "Expert validation",
+        "detail": "EU-OSHA guidance note confirmed obligations apply to operations with >50 employees"
+      },
+      {
+        "date": "2026-04-05",
+        "agent": "regulatory",
+        "event": "Triangulation",
+        "detail": "IPIECA briefing corroborated scope and implementation timeline"
+      },
+      {
+        "date": "2026-04-20",
+        "agent": "regulatory",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: European Parliament first reading scheduled for Q3 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-021",
+    "title": "OSHA updates hazard communication standard to align with GHS Revision 9 classification criteria",
+    "summary": "OSHA has published a final rule aligning the Hazard Communication Standard with GHS Revision 9, introducing new hazard classes for endocrine disruption and respiratory sensitisation; Shell SDS libraries and chemical labelling across downstream US sites require systematic review before the 2027 compliance deadline.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-DEERPARK",
+      "A-NORCO"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "high",
+    "firstDetected": "2026-01-30",
+    "lastUpdated": "2026-04-10",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "OSHA",
+        "identifier": "OSHA-2026-0015",
+        "title": "Hazard Communication Standard: alignment with GHS Revision 9 — final rule",
+        "date": "2026-01-30"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-08",
+        "title": "NIOSH implementation note: GHS Revision 9 new hazard classes for endocrine disruption",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-REG-2026-02",
+        "title": "GHS Rev 9 implications for oil and gas SDS management systems",
+        "date": "2026-03-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Initiate SDS library review for GHS Revision 9 new hazard class applicability at Deer Park and Norco and establish project plan for label updates before the 2027 compliance deadline.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-30",
+        "agent": "regulatory",
+        "event": "Final rule published",
+        "detail": "OSHA final rule retrieved; new hazard classes assessed for downstream chemical inventory"
+      },
+      {
+        "date": "2026-02-20",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "NIOSH implementation note confirmed endocrine disruptor class affects multiple refinery chemicals"
+      },
+      {
+        "date": "2026-04-10",
+        "agent": "regulatory",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; SDS review project scoped for H2 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-022",
+    "title": "CDC updates respirator performance standard to ASTM F3502 filtration efficiency requirements",
+    "summary": "CDC guidance formally adopts ASTM F3502 as the performance standard for workplace respirator filtering facepieces, introducing new filtration efficiency categories that may render portions of the Shell respiratory protection equipment inventory non-conformant.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN",
+      "A-DEERPARK"
+    ],
+    "affectedSegments": [
+      "upstream",
+      "downstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-12",
+    "lastUpdated": "2026-04-03",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-09",
+        "title": "CDC/NIOSH adoption of ASTM F3502 for workplace respirator performance",
+        "date": "2026-02-12"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "OSHA",
+        "identifier": "OSHA-2026-0018",
+        "title": "OSHA technical information bulletin: ASTM F3502 respirator standard",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-REG-2026-03",
+        "title": "Respiratory protection equipment compliance: ASTM F3502 implications for oil and gas",
+        "date": "2026-03-20"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene"
+    ],
+    "recommendedAction": "Conduct RPE inventory audit against ASTM F3502 performance categories at US upstream and downstream sites and identify any non-conformant equipment requiring replacement.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-12",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "NIOSH adoption notice retrieved; ASTM F3502 categories mapped to current Shell RPE inventory"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "regulatory",
+        "event": "Triangulation",
+        "detail": "OSHA technical bulletin corroborated adoption timeline"
+      },
+      {
+        "date": "2026-04-03",
+        "agent": "regulatory",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; RPE audit scoped for Q3 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-023",
+    "title": "IOGP Report 472 revision updates health risk assessment methodology for oil and gas operations",
+    "summary": "IOGP is revising Report 472 to incorporate quantitative exposure-response modelling for mixed chemical exposures in petrochemical environments, which will affect the methodological baseline for Shell health risk assessments across multiple asset categories.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "global"
+    ],
+    "affectedAssets": [],
+    "affectedSegments": [
+      "upstream",
+      "downstream",
+      "integrated-gas"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "low",
+    "firstDetected": "2026-03-05",
+    "lastUpdated": "2026-04-08",
+    "sources": [
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-REG-2026-04",
+        "title": "IOGP Report 472 revision: scope and consultation update",
+        "date": "2026-03-05"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38834512",
+        "title": "Quantitative health risk assessment for mixed petrochemical exposures: methodological advances",
+        "date": "2026-02-28"
+      }
+    ],
+    "triangulationCount": 2,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene"
+    ],
+    "recommendedAction": "Nominate a Shell representative to participate in the IOGP Report 472 revision working group consultation to ensure operational exposure scenarios are adequately represented.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-05",
+        "agent": "regulatory",
+        "event": "Industry detection",
+        "detail": "IOGP revision scope document published; mixed-exposure modelling methodology assessed"
+      },
+      {
+        "date": "2026-04-08",
+        "agent": "regulatory",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; consultation participation being considered"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-024",
+    "title": "EASA revises Class 1 aviation medical certification requirements affecting medical evacuation capability",
+    "summary": "EASA AMC/GM amendment to Part-MED introduces tightened cardiovascular and neurological fitness standards for commercial pilots operating Class 1 certificates; this may restrict availability of medevac pilots at short notice for APAC and EMEA offshore operations.",
+    "tier": "watch",
+    "ppa": [
+      "access"
+    ],
+    "agent": "regulatory",
+    "regions": [
+      "EMEA",
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER",
+      "A-PRELUDE"
+    ],
+    "affectedSegments": [
+      "upstream",
+      "integrated-gas"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-22",
+    "lastUpdated": "2026-04-18",
+    "sources": [
+      {
+        "type": "regulatory",
+        "publisher": "EU-OSHA",
+        "identifier": "EASA-AMC-2026-01",
+        "title": "EASA AMC/GM amendment Part-MED: Class 1 medical certification update",
+        "date": "2026-02-22"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-MED-2026-03",
+        "title": "EASA Class 1 medical revision: implications for offshore medevac aviation operations",
+        "date": "2026-03-25"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38856789",
+        "title": "Cardiovascular fitness standards for commercial aviation: review of EASA Part-MED evidence base",
+        "date": "2026-02-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-12 Medical Emergency Response",
+      "MHMS-01 Medical Fitness for Work"
+    ],
+    "recommendedAction": "Engage Shell-contracted offshore medevac aviation providers to assess pilot fleet compliance with EASA Part-MED 2026 revision and identify any reduction in available certified medevac pilot capacity.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-22",
+        "agent": "regulatory",
+        "event": "Regulatory detection",
+        "detail": "EASA AMC/GM amendment published; cardiovascular and neurological standard changes assessed"
+      },
+      {
+        "date": "2026-03-25",
+        "agent": "regulatory",
+        "event": "Expert validation",
+        "detail": "IOGP guidance note confirmed medevac aviation operator scope and pilot fleet impact"
+      },
+      {
+        "date": "2026-04-18",
+        "agent": "regulatory",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: contracted provider preliminary assessment indicates potential capacity reduction"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-025",
+    "title": "WBGT thresholds projected to exceed NIOSH action levels during Permian Basin summer 2026",
+    "summary": "NOAA seasonal outlook projects 2026 Permian Basin summer temperatures 1.8°C above the 2010-2024 baseline, with WBGT modelling indicating mandatory work-rest regime triggers on an estimated 47 workdays between June and September, directly constraining exterior maintenance productivity.",
+    "tier": "attention",
+    "ppa": [
+      "protect",
+      "promote"
+    ],
+    "agent": "climate",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "high",
+    "firstDetected": "2026-01-15",
+    "lastUpdated": "2026-04-28",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "NOAA",
+        "identifier": "NOAA-CPC-2026-Q2-OUTLOOK",
+        "title": "NOAA Climate Prediction Center: Q2-Q3 2026 summer temperature outlook",
+        "date": "2026-04-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38834901",
+        "title": "Wet bulb globe temperature exceedances in Permian Basin oilfield operations: 2020-2025 analysis",
+        "date": "2026-02-14"
+      },
+      {
+        "type": "environmental",
+        "publisher": "Copernicus C3S",
+        "identifier": "C3S-ERA5-2026-APR",
+        "title": "Copernicus ERA5 reanalysis: US Southwest surface temperature anomalies 2026",
+        "date": "2026-04-20"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-10",
+        "title": "NIOSH WBGT criteria document: exposure limit application for outdoor oil and gas operations",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "industry",
+        "publisher": "IPIECA",
+        "identifier": "IPIECA-HSE-2026-06",
+        "title": "IPIECA heat stress management guidance for onshore upstream operations",
+        "date": "2026-04-10"
+      }
+    ],
+    "triangulationCount": 5,
+    "seamMapping": [
+      "MHMS-04 Heat Stress Management",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Implement automated WBGT monitoring stations at Permian Basin field locations and activate pre-defined work-rest regime protocols for exterior maintenance before 1 June 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-15",
+        "agent": "climate",
+        "event": "NLP detection",
+        "detail": "Copernicus C3S early-season temperature anomaly data flagged Permian Basin as high-risk zone"
+      },
+      {
+        "date": "2026-02-14",
+        "agent": "climate",
+        "event": "Expert validation",
+        "detail": "PubMed analysis confirmed historical WBGT exceedance frequency at Permian field sites"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "NOAA seasonal outlook corroborated Copernicus signal independently"
+      },
+      {
+        "date": "2026-04-28",
+        "agent": "climate",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: NOAA forecast confirms 47-day exceedance window; NIOSH NPRM adds regulatory urgency"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-026",
+    "title": "Vector-borne disease range expansion into North Sea region detected via climate modelling",
+    "summary": "Copernicus C3S climate projections show Aedes albopictus establishment probability reaching 15-25% in coastal southern England and northern France by 2030, potentially extending dengue and chikungunya transmission risk to North Sea offshore crew rotation hubs.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "low",
+    "firstDetected": "2026-02-28",
+    "lastUpdated": "2026-04-05",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "Copernicus C3S",
+        "identifier": "C3S-VBD-2026-01",
+        "title": "Copernicus: vector-borne disease climate risk projections for European coastal zones",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38812341",
+        "title": "Aedes albopictus northward expansion under climate scenarios: UK and Northern France risk assessment",
+        "date": "2026-01-20"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "ECDC",
+        "identifier": "RRA-2026-VBD-01",
+        "title": "ECDC vector surveillance report: Aedes albopictus distribution Europe 2025 update",
+        "date": "2026-03-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control"
+    ],
+    "recommendedAction": "Incorporate Aedes albopictus range expansion projections into North Sea crew rotation hub health risk assessments and schedule baseline vector surveillance assessment for 2027.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-28",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "Copernicus C3S projection data flagged North Sea coastal zones in 15-25% establishment probability band"
+      },
+      {
+        "date": "2026-03-10",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "ECDC surveillance report corroborated northward range expansion trend"
+      },
+      {
+        "date": "2026-04-05",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; 1-5yr horizon; monitor ECDC annual surveillance updates"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-027",
+    "title": "Pacific Northwest wildfire smoke air quality events forecast to intensify in 2026 summer season",
+    "summary": "NOAA and US Forest Service projections indicate above-average 2026 Pacific Northwest wildfire season driven by spring drought conditions, with particulate matter PM2.5 exceedances likely at Scotford Complex during smoke transport events originating in BC and Alberta.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-SCOTFORD"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "moderate",
+    "firstDetected": "2026-03-12",
+    "lastUpdated": "2026-04-22",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "NOAA",
+        "identifier": "NOAA-HRRR-SMOKE-2026",
+        "title": "NOAA HRRR-Smoke 2026 wildfire season forecast: Pacific Northwest and Canadian Prairies",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38867023",
+        "title": "Occupational PM2.5 exposure during wildfire smoke events in industrial settings: health outcomes",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "environmental",
+        "publisher": "Copernicus C3S",
+        "identifier": "C3S-FIRE-2026-02",
+        "title": "Copernicus CAMS fire season outlook: North America 2026",
+        "date": "2026-04-01"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-02 Occupational Hygiene",
+      "MHMS-04 Heat Stress Management"
+    ],
+    "recommendedAction": "Update Scotford Complex outdoor air quality management plan to include wildfire smoke PM2.5 action levels and pre-position N95 respirator stockpile before the June-September high-risk window.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-12",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "Copernicus CAMS spring drought index flagged elevated fire risk for Alberta and BC"
+      },
+      {
+        "date": "2026-03-20",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "NOAA HRRR-Smoke seasonal forecast corroborated Copernicus signal"
+      },
+      {
+        "date": "2026-04-22",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; Scotford health plan update scoped"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-028",
+    "title": "Cyclone medevac corridor disruption risk elevated for APAC offshore assets in 2026 season",
+    "summary": "La Niña transition and sea surface temperature anomalies in the Indian Ocean and Coral Sea are correlated with increased severe cyclone frequency in 2026 that could close key medevac flight corridors for Prelude FLNG and QGC LNG, requiring contingency evacuation pathway activation.",
+    "tier": "attention",
+    "ppa": [
+      "access",
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-PRELUDE",
+      "A-QGC"
+    ],
+    "affectedSegments": [
+      "integrated-gas"
+    ],
+    "horizon": "immediate",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-28",
+    "lastUpdated": "2026-04-24",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "WMO",
+        "identifier": "WMO-TC-2026-APAC",
+        "title": "WMO tropical cyclone seasonal outlook: Australian region 2025-2026",
+        "date": "2026-01-20"
+      },
+      {
+        "type": "environmental",
+        "publisher": "NOAA",
+        "identifier": "NOAA-SST-2026-INDIAN",
+        "title": "NOAA Indian Ocean sea surface temperature anomaly analysis Q1 2026",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38798234",
+        "title": "Medical evacuation delays associated with tropical cyclone activity in offshore Australia: retrospective analysis",
+        "date": "2026-01-28"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-MED-2026-04",
+        "title": "Cyclone contingency medevac planning for APAC offshore operations",
+        "date": "2026-03-10"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-12 Medical Emergency Response",
+      "MHMS-04 Heat Stress Management"
+    ],
+    "recommendedAction": "Activate cyclone-season medevac contingency plans for Prelude FLNG and QGC including secondary evacuation pathway agreements with Darwin and Broome hospitals before 1 November 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-28",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "WMO seasonal outlook flagged elevated severe cyclone probability for Australian region"
+      },
+      {
+        "date": "2026-02-10",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "NOAA SST anomaly data corroborated WMO signal independently"
+      },
+      {
+        "date": "2026-03-10",
+        "agent": "climate",
+        "event": "Expert validation",
+        "detail": "IOGP medevac planning guidance confirmed contingency pathway gaps for Prelude"
+      },
+      {
+        "date": "2026-04-24",
+        "agent": "climate",
+        "event": "Tier escalation",
+        "detail": "Watch → Attention: La Niña transition confirmed; above-average season probability elevated to 70%"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-029",
+    "title": "Cold stress risk elevated for Arctic exploration operations during extended low-temperature periods",
+    "summary": "Polar vortex displacement events are producing unpredicted extended cold-stress exposure windows at Shell arctic-proximate operations, with wind chill indices exceeding ACGIH TLV for unprotected skin faster than current work-rest schedule assumptions accommodate.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-SCOTFORD"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "low",
+    "firstDetected": "2026-01-20",
+    "lastUpdated": "2026-03-15",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "NOAA",
+        "identifier": "NOAA-PV-2026-01",
+        "title": "NOAA polar vortex displacement analysis: North America winter 2025-2026",
+        "date": "2026-01-20"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38752341",
+        "title": "Cold stress exposure in outdoor industrial workers: updated ACGIH TLV applicability",
+        "date": "2026-01-10"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "NIOSH",
+        "identifier": "NIOSH-2026-11",
+        "title": "NIOSH guidance: cold stress in outdoor occupational settings",
+        "date": "2026-02-01"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-04 Heat Stress Management"
+    ],
+    "recommendedAction": "Review cold-stress work-rest schedules at Scotford for compliance with ACGIH TLV wind chill index thresholds and update contractor briefing materials before next winter season.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-20",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "NOAA polar vortex displacement data flagged extended cold exposure events at Canadian prairie sites"
+      },
+      {
+        "date": "2026-02-01",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "NIOSH guidance confirmed ACGIH TLV thresholds exceeded during recorded events"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; will reassess ahead of 2026-2027 winter season"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-030",
+    "title": "Sea-level rise coastal asset health impact assessment required for Gulf of Mexico and APAC sites",
+    "summary": "Updated IPCC AR6 WGI sea-level projections combined with 2026 storm surge modelling indicate medium-term flooding risk to onshore support infrastructure at Deer Park and Norco that could interrupt routine medical services and compound emergency response during extreme weather events.",
+    "tier": "watch",
+    "ppa": [
+      "access",
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "AMER",
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-DEERPARK",
+      "A-NORCO"
+    ],
+    "affectedSegments": [
+      "downstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "low",
+    "firstDetected": "2026-03-01",
+    "lastUpdated": "2026-04-10",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "NOAA",
+        "identifier": "NOAA-SLR-2026-GOM",
+        "title": "NOAA 2026 sea-level rise and storm surge assessment: Gulf of Mexico coastal industrial sites",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38879012",
+        "title": "Health infrastructure vulnerability to sea-level rise: industrial coastal facilities risk assessment",
+        "date": "2026-02-15"
+      },
+      {
+        "type": "environmental",
+        "publisher": "Copernicus C3S",
+        "identifier": "C3S-SLR-2026-01",
+        "title": "Copernicus sea-level service: Gulf of Mexico and Southeast Asia projections 2026",
+        "date": "2026-03-15"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Commission a climate-informed health infrastructure resilience assessment for Deer Park and Norco medical facilities covering sea-level rise and storm surge scenarios to 2040.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-01",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "NOAA storm surge modelling flagged Deer Park and Norco medical infrastructure in flood risk zone"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "Copernicus sea-level service projections corroborated NOAA signal"
+      },
+      {
+        "date": "2026-04-10",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; 1-5yr horizon; resilience assessment scoped"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-031",
+    "title": "Prolonged drought in eastern Australia drives psychosocial health risk in QGC operations workforce",
+    "summary": "The Bureau of Meteorology declares third consecutive La Niña-modulated drought year affecting Surat Basin communities surrounding QGC LNG; local community mental health deterioration and workforce displacement anxiety are amplifying psychosocial risk factors for Shell QGC employees from host communities.",
+    "tier": "watch",
+    "ppa": [
+      "promote"
+    ],
+    "agent": "climate",
+    "regions": [
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-QGC"
+    ],
+    "affectedSegments": [
+      "integrated-gas"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-05",
+    "lastUpdated": "2026-04-12",
+    "sources": [
+      {
+        "type": "environmental",
+        "publisher": "WMO",
+        "identifier": "WMO-DROUGHT-2026-AUS",
+        "title": "WMO drought monitor: eastern Australia Q1 2026",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38801567",
+        "title": "Mental health impacts of prolonged drought on rural Australian communities: systematic review",
+        "date": "2026-01-25"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP",
+        "identifier": "IOGP-PSY-2026-01",
+        "title": "Climate-related psychosocial risk in resource industry operations: IOGP guidance",
+        "date": "2026-03-05"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-06 Contractor HSSE"
+    ],
+    "recommendedAction": "Extend QGC employee assistance programme capacity and brief line managers on drought-related psychosocial risk indicators among host-community employees and local contractors.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-05",
+        "agent": "climate",
+        "event": "Environmental detection",
+        "detail": "WMO drought monitor flagged Surat Basin in severe drought category for third consecutive year"
+      },
+      {
+        "date": "2026-03-05",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "IOGP climate-psychosocial guidance confirmed risk pathway for host-community workforce"
+      },
+      {
+        "date": "2026-04-12",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; QGC EAP utilisation data requested for next review cycle"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-032",
+    "title": "Climate-AMR co-occurrence model identifies Permian Basin and Nigeria as dual-risk zones",
+    "summary": "A novel climate-antimicrobial resistance co-occurrence model published in Lancet Countdown data identifies the Permian Basin and Niger Delta as regions where climate-driven temperature increases are accelerating AMR gene expression, potentially compounding infection risk for trauma and surgical cases at field medical facilities.",
+    "tier": "watch",
+    "ppa": [
+      "protect"
+    ],
+    "agent": "climate",
+    "regions": [
+      "AMER",
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN",
+      "A-NDA"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "low",
+    "firstDetected": "2026-03-20",
+    "lastUpdated": "2026-04-15",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38890678",
+        "title": "Temperature-driven acceleration of antimicrobial resistance gene expression: global hotspot analysis",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "environmental",
+        "publisher": "Lancet Countdown",
+        "identifier": "LC-2026-AMR-CLIMATE",
+        "title": "Lancet Countdown 2026: climate change and antimicrobial resistance co-occurrence indicators",
+        "date": "2026-04-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38912089",
+        "title": "AMR prevalence in tropical oilfield wound infections: Niger Delta case series 2022-2025",
+        "date": "2026-04-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-09 Communicable Disease Control",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Incorporate climate-AMR interaction risk into the next revision of field medical facility antibiotic formularies at Permian and NDA sites and review empiric treatment protocols for wound infections.",
+    "evidenceTrail": [
+      {
+        "date": "2026-03-20",
+        "agent": "climate",
+        "event": "NLP detection",
+        "detail": "PubMed climate-AMR co-occurrence paper identified Permian Basin and Niger Delta as hotspots"
+      },
+      {
+        "date": "2026-04-01",
+        "agent": "climate",
+        "event": "Triangulation",
+        "detail": "Lancet Countdown 2026 indicators corroborated temperature-AMR acceleration model"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "climate",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; 1-5yr horizon; antibiotic formulary review flagged"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-033",
+    "title": "Ageing offshore workforce capability gap widens as competency transfer mechanisms lag retirement rate",
+    "summary": "IOGP workforce demographics data show the median age of UKCS offshore technicians has risen to 52, with an estimated 18% retiring before 2028; tacit competency transfer mechanisms are inadequate to prevent a measurable capability gap that will affect Shell North Sea operational and emergency response effectiveness.",
+    "tier": "watch",
+    "ppa": [
+      "promote",
+      "access"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "1-5yr",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-25",
+    "lastUpdated": "2026-04-08",
+    "sources": [
+      {
+        "type": "industry",
+        "publisher": "IOGP HSSE",
+        "identifier": "IOGP-PSY-2026-02",
+        "title": "IOGP workforce demographics: age profile and competency transfer in UKCS offshore operations",
+        "date": "2026-01-25"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38756234",
+        "title": "Ageing workforce and occupational health outcomes in offshore oil and gas: prospective cohort study",
+        "date": "2026-01-15"
+      },
+      {
+        "type": "industry",
+        "publisher": "OEUK",
+        "identifier": "OEUK-2026-04",
+        "title": "OEUK workforce report 2026: skills gap and retirement wave in UKCS",
+        "date": "2026-02-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38878901",
+        "title": "Tacit knowledge transfer in high-reliability offshore organisations: barriers and enablers",
+        "date": "2026-02-28"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-01 Medical Fitness for Work"
+    ],
+    "recommendedAction": "Commission a North Sea workforce age-profile and competency transfer gap assessment and develop a structured knowledge capture programme targeting the highest-risk technical roles before 2027.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-25",
+        "agent": "psychosocial",
+        "event": "Industry detection",
+        "detail": "IOGP demographics data showed median UKCS technician age reaching 52; retirement wave analysis triggered"
+      },
+      {
+        "date": "2026-02-15",
+        "agent": "psychosocial",
+        "event": "Corroboration",
+        "detail": "OEUK workforce report independently confirmed 18% retirement projection before 2028"
+      },
+      {
+        "date": "2026-04-08",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; competency gap assessment scoped for H2 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-034",
+    "title": "Energy-transition workforce identity stress linked to elevated anxiety and disengagement in Shell renewables teams",
+    "summary": "Longitudinal survey data from Energy Transition Campus Amsterdam and Rotterdam Biofuels Refinery indicate a statistically significant elevation in professional identity stress among workers transitioning from fossil fuel to renewables roles, correlating with decreased psychological safety scores.",
+    "tier": "watch",
+    "ppa": [
+      "promote"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-ETC-AMS",
+      "A-RBR"
+    ],
+    "affectedSegments": [
+      "renewables"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-10",
+    "lastUpdated": "2026-04-05",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38812678",
+        "title": "Professional identity disruption during energy sector transitions: a mixed-methods study",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "industry",
+        "publisher": "ILO",
+        "identifier": "ILO-WFUTURE-2026-01",
+        "title": "ILO: just transition and worker wellbeing — psychosocial dimensions",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38867456",
+        "title": "Psychological safety during organisational transition in petrochemical-to-renewables settings",
+        "date": "2026-03-15"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk"
+    ],
+    "recommendedAction": "Embed professional identity coaching and peer support mechanisms into the ETC Amsterdam and Rotterdam Biofuels Refinery workforce transition programmes within Q3 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-10",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "PubMed paper on energy transition identity stress matched to ETC and RBR workforce characteristics"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "ILO just transition guidance corroborated psychosocial risk pathway"
+      },
+      {
+        "date": "2026-04-05",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; internal survey data requested from ETC and RBR HR"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-035",
+    "title": "Fatigue risk model recalibration required for 14/14 offshore rotation schedules",
+    "summary": "New circadian disruption research demonstrates that the standard 14 days on / 14 days off offshore rotation produces cumulative cognitive fatigue that is not fully recovered within the 14-day rest period, challenging the safety assumption underlying current Shell North Sea rotation scheduling.",
+    "tier": "watch",
+    "ppa": [
+      "protect",
+      "promote"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-NS-SHEARWATER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-30",
+    "lastUpdated": "2026-04-15",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38734123",
+        "title": "Cumulative fatigue in 14/14 offshore rotation: circadian biomarker and cognitive performance study",
+        "date": "2026-01-30"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38889234",
+        "title": "Sleep architecture and recovery in extended offshore work rotations: polysomnographic data",
+        "date": "2026-02-25"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP HSSE",
+        "identifier": "IOGP-PSY-2026-03",
+        "title": "Fatigue risk management in offshore work scheduling: updated evidence review",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "regulatory",
+        "publisher": "HSE",
+        "identifier": "HSE-CONSULT-2026-02",
+        "title": "HSE discussion paper: fatigue management in offshore rotation scheduling",
+        "date": "2026-04-05"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-08 Fatigue Risk Management"
+    ],
+    "recommendedAction": "Commission a biomathematical fatigue model validation study for Shell 14/14 rotation schedules at Nelson and Shearwater and report findings to the North Sea HSSE leadership team before Q4 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-30",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "PubMed cognitive performance study flagged incomplete recovery within 14-day rest period"
+      },
+      {
+        "date": "2026-02-25",
+        "agent": "psychosocial",
+        "event": "Expert validation",
+        "detail": "Sleep medicine specialist confirmed polysomnographic evidence of cumulative sleep debt"
+      },
+      {
+        "date": "2026-03-20",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "IOGP evidence review corroborated circadian disruption findings"
+      },
+      {
+        "date": "2026-04-15",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; HSE discussion paper adds regulatory dimension; fatigue model study scoped"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-036",
+    "title": "Lone worker mental health pilot programme at remote onshore sites reveals elevated distress prevalence",
+    "summary": "A pilot wellbeing monitoring programme at three Shell remote onshore sites indicates that lone and semi-isolated workers show mental health distress scores 34% higher than site-average populations, validating the need for structured lone worker psychological support protocols.",
+    "tier": "watch",
+    "ppa": [
+      "promote",
+      "protect"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "AMER",
+      "APAC"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN",
+      "A-QGC"
+    ],
+    "affectedSegments": [
+      "upstream",
+      "integrated-gas"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-20",
+    "lastUpdated": "2026-04-10",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38801890",
+        "title": "Mental health outcomes in lone and isolated workers in extractive industries: cross-sectional study",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "industry",
+        "publisher": "NIOSH Total Worker Health",
+        "identifier": "NIOSH-2026-12",
+        "title": "NIOSH Total Worker Health: remote and isolated worker mental health programme design",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "industry",
+        "publisher": "ILO",
+        "identifier": "ILO-MH-2026-01",
+        "title": "ILO guidance: psychological support for isolated and lone workers",
+        "date": "2026-03-10"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk"
+    ],
+    "recommendedAction": "Scale the lone worker wellbeing monitoring pilot to all remote Shell onshore sites globally and establish peer support network with crisis referral protocol by end Q3 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-20",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "PubMed cross-sectional study confirmed 34% higher distress scores in isolated extraction workers"
+      },
+      {
+        "date": "2026-03-10",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "NIOSH and ILO guidance corroborated need for structured lone worker support protocol"
+      },
+      {
+        "date": "2026-04-10",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; pilot programme expansion proposal submitted to regional HSSE leadership"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-037",
+    "title": "Cumulative trauma exposure in post-incident responders at Bonga FPSO drives secondary PTSD risk",
+    "summary": "Post-incident psychological screening following the Q4 2025 Bonga FPSO emergency response exercise revealed that 22% of trained emergency responders met screening criteria for secondary traumatic stress, signalling inadequate psychological debriefing provision in the current critical incident response programme.",
+    "tier": "watch",
+    "ppa": [
+      "promote",
+      "protect"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "EMEA"
+    ],
+    "affectedAssets": [
+      "A-BONGA"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-10",
+    "lastUpdated": "2026-03-28",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38712345",
+        "title": "Secondary traumatic stress in offshore emergency response teams: prevalence and risk factors",
+        "date": "2026-01-10"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38845023",
+        "title": "Critical incident stress debriefing effectiveness in industrial emergency responders: RCT evidence",
+        "date": "2026-02-14"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP HSSE",
+        "identifier": "IOGP-PSY-2026-04",
+        "title": "Psychological support for offshore emergency responders: IOGP practice guide",
+        "date": "2026-03-01"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Implement a structured critical incident stress management programme with qualified CISD practitioners for all Bonga FPSO emergency response team members and revise post-incident psychological support protocols globally.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-10",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "Post-exercise screening data flagged 22% secondary traumatic stress prevalence among Bonga responders"
+      },
+      {
+        "date": "2026-02-14",
+        "agent": "psychosocial",
+        "event": "Expert validation",
+        "detail": "PubMed RCT evidence reviewed; current debriefing model found to be insufficient"
+      },
+      {
+        "date": "2026-03-28",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; CISD programme design in progress"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-038",
+    "title": "Post-pandemic substance use disorder prevalence remains elevated in offshore and remote workforce populations",
+    "summary": "WHO and occupational health surveillance data show that post-pandemic alcohol and prescription drug misuse rates in remote and offshore industrial workforces remain 28% above pre-2020 baselines, elevating impairment risk in safety-critical roles across Shell offshore and field operations.",
+    "tier": "watch",
+    "ppa": [
+      "promote",
+      "protect"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "global"
+    ],
+    "affectedAssets": [
+      "A-NS-NELSON",
+      "A-GOM-AUGER"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-18",
+    "lastUpdated": "2026-04-02",
+    "sources": [
+      {
+        "type": "who-alert",
+        "publisher": "WHO MHGap",
+        "identifier": "WHO-MH-2026-01",
+        "title": "WHO Mental Health Gap Action Programme: post-pandemic substance use in occupational settings",
+        "date": "2026-01-18"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38756890",
+        "title": "Alcohol and substance use disorder in offshore oil and gas workers: post-pandemic trend analysis",
+        "date": "2026-01-15"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP HSSE",
+        "identifier": "IOGP-PSY-2026-05",
+        "title": "Substance use policy in offshore and remote operations: IOGP updated guidance",
+        "date": "2026-03-01"
+      }
+    ],
+    "triangulationCount": 3,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-07 Alcohol and Drug Policy"
+    ],
+    "recommendedAction": "Review the efficacy of Shell alcohol and drug testing programmes at offshore and field sites against current elevated post-pandemic prevalence data and assess need for enhanced EAP referral pathways.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-18",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "WHO MHGap data showed remote workforce substance use 28% above pre-2020 baseline"
+      },
+      {
+        "date": "2026-03-01",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "IOGP updated guidance confirmed systemic post-pandemic risk pattern in offshore operations"
+      },
+      {
+        "date": "2026-04-02",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; testing programme review scoped for Q3 2026"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-039",
+    "title": "Suicide cluster surveillance in North American upstream detects elevated risk in Permian Basin workforce",
+    "summary": "Occupational health surveillance data from Permian Basin upstream operators indicate a statistically anomalous rate of completed suicides and serious attempts in 2025-Q1 2026 (3.8 per 10,000 person-years vs industry baseline of 1.4); preliminary cluster investigation has identified work isolation and financial stress as leading contributing factors.",
+    "tier": "watch",
+    "ppa": [
+      "promote",
+      "protect"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "AMER"
+    ],
+    "affectedAssets": [
+      "A-PERMIAN"
+    ],
+    "affectedSegments": [
+      "upstream"
+    ],
+    "horizon": "immediate",
+    "confidence": "moderate",
+    "firstDetected": "2026-01-05",
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38701234",
+        "title": "Suicide rates in US onshore oil and gas workers: 2015-2025 surveillance analysis",
+        "date": "2026-01-05"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38834678",
+        "title": "Work isolation and financial stress as suicide risk factors in remote oilfield workers",
+        "date": "2026-02-10"
+      },
+      {
+        "type": "industry",
+        "publisher": "NIOSH Total Worker Health",
+        "identifier": "NIOSH-2026-13",
+        "title": "NIOSH Total Worker Health: suicide prevention in oil and gas industry",
+        "date": "2026-03-01"
+      },
+      {
+        "type": "who-alert",
+        "publisher": "WHO MHGap",
+        "identifier": "WHO-MH-2026-02",
+        "title": "WHO guidance: suicide cluster investigation and response in occupational settings",
+        "date": "2026-03-20"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk",
+      "MHMS-12 Medical Emergency Response"
+    ],
+    "recommendedAction": "Initiate a formal occupational suicide cluster investigation at Permian Basin operations engaging an independent mental health epidemiologist and activate the HSSE crisis intervention protocol within 30 days.",
+    "evidenceTrail": [
+      {
+        "date": "2026-01-05",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "PubMed surveillance analysis flagged Permian Basin suicide rate 2.7x industry baseline"
+      },
+      {
+        "date": "2026-02-10",
+        "agent": "psychosocial",
+        "event": "Expert validation",
+        "detail": "Occupational psychiatrist confirmed cluster definition criteria met; contributing factor analysis commenced"
+      },
+      {
+        "date": "2026-03-20",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "WHO cluster investigation guidance obtained; NIOSH suicide prevention framework applied"
+      },
+      {
+        "date": "2026-04-25",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch tier per instruction; cluster investigation formally commissioned"
+      }
+    ]
+  },
+  {
+    "id": "SIG-2026-Q2-040",
+    "title": "Burnout prevalence in HSSE leadership roles reaching critical threshold across Shell global operations",
+    "summary": "Cross-sectional occupational health survey data indicate that 41% of Shell HSSE leadership respondents globally meet Maslach Burnout Inventory criteria for severe burnout, a finding that threatens programme quality, safety culture maintenance, and regulatory compliance credibility if unaddressed.",
+    "tier": "watch",
+    "ppa": [
+      "promote"
+    ],
+    "agent": "psychosocial",
+    "regions": [
+      "global"
+    ],
+    "affectedAssets": [],
+    "affectedSegments": [
+      "upstream",
+      "downstream",
+      "integrated-gas",
+      "renewables"
+    ],
+    "horizon": "12mo",
+    "confidence": "moderate",
+    "firstDetected": "2026-02-28",
+    "lastUpdated": "2026-04-20",
+    "sources": [
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38867901",
+        "title": "Burnout in occupational health and safety professionals: global prevalence and organisational correlates",
+        "date": "2026-02-28"
+      },
+      {
+        "type": "industry",
+        "publisher": "ILO",
+        "identifier": "ILO-MH-2026-02",
+        "title": "ILO: occupational burnout in health, safety, and environment roles — guidance for employers",
+        "date": "2026-03-15"
+      },
+      {
+        "type": "peer-reviewed",
+        "publisher": "PubMed",
+        "identifier": "PMID:38912567",
+        "title": "HSSE leadership burnout and organisational safety performance: longitudinal study",
+        "date": "2026-04-05"
+      },
+      {
+        "type": "industry",
+        "publisher": "IOGP HSSE",
+        "identifier": "IOGP-PSY-2026-06",
+        "title": "Protecting HSSE leadership wellbeing: IOGP practitioner guidance",
+        "date": "2026-04-15"
+      }
+    ],
+    "triangulationCount": 4,
+    "seamMapping": [
+      "MHMS-11 Psychosocial Risk"
+    ],
+    "recommendedAction": "Commission a targeted HSSE leadership wellbeing programme with Maslach Burnout Inventory baseline measurement and structured supervision and peer support mechanisms to be operational by Q4 2026.",
+    "evidenceTrail": [
+      {
+        "date": "2026-02-28",
+        "agent": "psychosocial",
+        "event": "NLP detection",
+        "detail": "PubMed burnout prevalence study showed 41% severe burnout in HSSE professionals globally"
+      },
+      {
+        "date": "2026-03-15",
+        "agent": "psychosocial",
+        "event": "Triangulation",
+        "detail": "ILO guidance and IOGP practitioner note corroborated organisational safety performance risk"
+      },
+      {
+        "date": "2026-04-20",
+        "agent": "psychosocial",
+        "event": "Routine review",
+        "detail": "Maintained at Watch; internal HSSE wellbeing survey commissioned for Q3 2026"
+      }
+    ]
+  }
+]
