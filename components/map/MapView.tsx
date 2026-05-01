@@ -21,6 +21,23 @@ const WorldMap = dynamic(() => import('./WorldMap').then((m) => m.WorldMap), {
   ),
 });
 
+type RegionPresetId =
+  | 'gulf-of-mexico'
+  | 'north-sea'
+  | 'permian'
+  | 'niger-delta'
+  | 'asia-pacific'
+  | 'pernis-cluster';
+
+const REGION_PRESETS: { id: RegionPresetId; label: string }[] = [
+  { id: 'gulf-of-mexico', label: 'Gulf of Mexico' },
+  { id: 'north-sea', label: 'North Sea' },
+  { id: 'permian', label: 'Permian' },
+  { id: 'niger-delta', label: 'Niger Delta' },
+  { id: 'asia-pacific', label: 'Asia-Pacific' },
+  { id: 'pernis-cluster', label: 'Pernis cluster' },
+];
+
 type PlaySpeed = 1 | 4 | 8 | 16;
 
 const FOURTEEN_DAYS_MS = 14 * 24 * 60 * 60 * 1000;
@@ -41,6 +58,8 @@ export function MapView({ signals, assets }: MapViewProps) {
   const [scrubberDate, setScrubberDate] = useState<Date>(() => new Date(now));
   const [playSpeed, setPlaySpeed] = useState<PlaySpeed>(4);
   const [filterPanelOpen, setFilterPanelOpen] = useState(false);
+  const [activeRegion, setActiveRegion] = useState<RegionPresetId | null>(null);
+  const [flyToVersion, setFlyToVersion] = useState(0);
 
   // Filter signals by scrubber date window (firstDetected <= scrubberDate && lastUpdated >= scrubberDate - 14d)
   const filteredSignals = useMemo(() => {
@@ -88,6 +107,8 @@ export function MapView({ signals, assets }: MapViewProps) {
         visibleLayers={visibleLayers}
         scrubberDate={scrubberDate}
         onSelect={handleSelect}
+        flyToRegion={activeRegion}
+        flyToVersion={flyToVersion}
       />
 
       {/* Layer toggles — top right */}
@@ -120,27 +141,27 @@ export function MapView({ signals, assets }: MapViewProps) {
             </span>
           </div>
           <div className="divide-y divide-[var(--border)]">
-            {[
-              'Gulf of Mexico',
-              'North Sea',
-              'Permian',
-              'Niger Delta',
-              'Asia-Pacific',
-              'Pernis cluster',
-            ].map((preset) => (
-              <button
-                key={preset}
-                className="w-full text-left px-3 py-2 text-[11px] text-[var(--ink-secondary)]
-                           hover:bg-[var(--panel)] hover:text-[var(--ink)] transition-colors font-mono"
-                aria-label={`Zoom to ${preset}`}
-                onClick={() => {
-                  // Preset navigation — stub (map pan/zoom not wired without map ref here)
-                  setFilterPanelOpen(false);
-                }}
-              >
-                {preset}
-              </button>
-            ))}
+            {REGION_PRESETS.map((preset) => {
+              const isActive = activeRegion === preset.id;
+              return (
+                <button
+                  key={preset.id}
+                  className={
+                    'w-full text-left px-3 py-2 text-[11px] hover:bg-[var(--panel)] ' +
+                    'hover:text-[var(--ink)] transition-colors font-mono ' +
+                    (isActive ? 'text-[var(--ink)] bg-[var(--panel)]' : 'text-[var(--ink-secondary)]')
+                  }
+                  aria-label={`Zoom to ${preset.label}`}
+                  aria-pressed={isActive}
+                  onClick={() => {
+                    setActiveRegion(preset.id);
+                    setFlyToVersion((v) => v + 1);
+                  }}
+                >
+                  {preset.label}
+                </button>
+              );
+            })}
           </div>
 
           {/* Active signal counts */}

@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { useEffect, useRef, useCallback } from 'react';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import type { Signal, Asset, AlertTier, BusinessSegment, HeadcountBand } from '@/lib/types';
+import { assetUrl } from '@/lib/assetUrl';
 
 interface WorldMapProps {
   signals: Signal[];
@@ -11,7 +12,30 @@ interface WorldMapProps {
   visibleLayers: Set<string>;
   scrubberDate: Date;
   onSelect: (signalId: string) => void;
+  /** Region preset to fly to. Increment `flyToVersion` to re-fly to the same region. */
+  flyToRegion?: RegionPresetId | null;
+  flyToVersion?: number;
 }
+
+export type RegionPresetId =
+  | 'gulf-of-mexico'
+  | 'north-sea'
+  | 'permian'
+  | 'niger-delta'
+  | 'asia-pacific'
+  | 'pernis-cluster';
+
+// [west, south, east, north] bounding boxes — calibrated to actual asset coords
+// in scripts/seed/assets.seed.ts. Padded enough that asset markers + nearby
+// land mass are visible at the resulting zoom level.
+export const REGION_BOUNDS: Record<RegionPresetId, [number, number, number, number]> = {
+  'gulf-of-mexico':  [-98, 22, -85, 32],     // Auger, Perdido, Vito, Deer Park, Norco
+  'north-sea':       [-2, 55, 6, 60],        // Nelson, Shearwater
+  'permian':         [-105, 29, -100, 34],   // Permian Basin Operations
+  'niger-delta':     [3, 3, 8, 6.5],         // Bonga, Niger Delta Assets
+  'asia-pacific':    [100, -28, 155, 25],    // Prelude, QGC, Bukom, Nanhai
+  'pernis-cluster':  [3.5, 51.4, 5.4, 52.6], // Pernis, Moerdijk, Rotterdam Biofuels, Holland Hydrogen, ETC Amsterdam
+};
 
 // Asset color by segment
 const SEGMENT_COLOR: Record<BusinessSegment, string> = {
@@ -82,7 +106,7 @@ function buildStyle(theme: 'editorial' | 'ops'): maplibregl.StyleSpecification {
   } as unknown as maplibregl.StyleSpecification;
 }
 
-export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelect }: WorldMapProps) {
+export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelect, flyToRegion, flyToVersion }: WorldMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const pulseIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -295,7 +319,7 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
         try {
           const [topoClient, topoData] = await Promise.all([
             import('topojson-client'),
-            fetch('/data/world-110m.json').then((r) => r.json()),
+            fetch(assetUrl('/data/world-110m.json')).then((r) => r.json()),
           ]);
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           countriesGeoJSON = topoClient.feature(topoData as any, (topoData as any).objects.countries);
@@ -365,6 +389,22 @@ export function WorldMap({ signals, assets, visibleLayers, scrubberDate, onSelec
     if (!map || !map.isStyleLoaded()) return;
     addDataLayers(map, signals, assets);
   }, [signals, assets, visibleLayers, scrubberDate, addDataLayers]);
+
+  // Region preset fly-to. Re-runs whenever flyToVersion increments, so
+  // clicking the same preset twice still re-flies (escape-from-zoom).
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !flyToRegion) return;
+    const bounds = REGION_BOUNDS[flyToRegion];
+    if (!bounds) return;
+    map.fitBounds(
+      [
+        [bounds[0], bounds[1]],
+        [bounds[2], bounds[3]],
+      ],
+      { padding: 80, duration: 900, essential: true },
+    );
+  }, [flyToRegion, flyToVersion]);
 
   // Cleanup on unmount
   useEffect(() => {

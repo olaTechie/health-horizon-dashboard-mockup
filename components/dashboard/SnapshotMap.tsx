@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 import type { Signal, Asset, Region } from '@/lib/types';
+import { assetUrl } from '@/lib/assetUrl';
 
 interface Props {
   signals: Signal[];
@@ -47,7 +48,7 @@ function MapCanvas({ signals, assets }: Props) {
         const [d3geo, topoClient, topoJson] = await Promise.all([
           import('d3-geo'),
           import('topojson-client'),
-          fetch('/data/world-110m.json').then((r) => r.json()),
+          fetch(assetUrl('/data/world-110m.json')).then((r) => r.json()),
         ]);
 
         if (cancelled) return;
