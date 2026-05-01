@@ -3,6 +3,8 @@
 Illustrative prototype dashboard for the Shell Health Horizon Scanning RFI (Deliverable C).
 **Disclaimer:** Real-event-grounded mock data. Not vendor-validated. Shell Pecten not displayed.
 
+📄 **[Page-by-page walkthrough with screenshots →](docs/walkthrough.md)**
+
 ## Quickstart
 ```bash
 npm install
