@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repo = 'shell-health-horizon-dashboard';
+const repo = 'health-horizon-dashboard-mockup';
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {

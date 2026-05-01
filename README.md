@@ -18,9 +18,11 @@ npx serve out
 ```
 
 ## Deploy to GitHub Pages
-1. Push to `main` of a GitHub repo named `shell-health-horizon-dashboard`.
+1. Push to `main` of a GitHub repo named `health-horizon-dashboard-mockup`.
 2. In Settings → Pages, set Source to "GitHub Actions".
 3. The action publishes `out/` automatically.
+
+Live URL once deployed: `https://olatechie.github.io/health-horizon-dashboard-mockup/`
 
 ## Configuring the repo name
 The `repo` constant in `next.config.ts` must match your GitHub repo name (powers `basePath`/`assetPrefix`). If you fork under a different name, update both.
