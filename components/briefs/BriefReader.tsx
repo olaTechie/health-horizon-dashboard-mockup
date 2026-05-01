@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Download } from 'lucide-react';
 import { fmtDate } from '@/lib/format';
+import { assetUrl } from '@/lib/assetUrl';
 import { TierDot } from '@/components/shared/TierBadge';
 import { TierBadge } from '@/components/shared/TierBadge';
 import type { Brief, Signal } from '@/lib/types';
@@ -256,7 +257,7 @@ export function BriefReader({ brief, signals }: BriefReaderProps) {
           {brief.pdfPath && (
             <div className="pt-4 border-t border-[var(--border)]">
               <a
-                href={brief.pdfPath}
+                href={assetUrl(brief.pdfPath)}
                 download
                 className="inline-flex items-center gap-2 rounded-md bg-[var(--ink)] text-[var(--bg)] px-4 py-2.5 text-sm font-medium transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--tier-watch)]"
               >

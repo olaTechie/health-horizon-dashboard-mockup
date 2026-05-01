@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "generate:data": "tsx scripts/generate-mock-data.ts"
+    "generate:data": "tsx scripts/generate-mock-data.ts",
+    "generate:briefs": "tsx scripts/generate-brief-pdfs.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -41,6 +42,7 @@
     "@testing-library/react": "^16.3.2",
     "@types/d3-geo": "^3.1.0",
     "@types/node": "^20",
+    "@types/pdfkit": "^0.17.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/topojson-client": "^3.1.5",
@@ -48,6 +50,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.15",
     "jsdom": "^25.0.1",
+    "pdfkit": "^0.18.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5",
