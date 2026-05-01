@@ -1,0 +1,44 @@
+import type { Agent } from '@/lib/types';
+
+export const AGENTS: Agent[] = [
+  {
+    id: 'infectious',
+    name: 'Infectious Disease & Pandemic Preparedness',
+    scanningDomain: 'Emerging pathogens, outbreak intelligence, IHR triggers, vaccine pipeline shifts',
+    sourcesMonitored: ['PubMed', 'WHO DON', 'ECDC RRA', 'ProMED', 'GISAID', 'bioRxiv'],
+    signalsOwned: 8,
+    lastRunAt: '2026-04-30T22:14:00Z',
+  },
+  {
+    id: 'occupational',
+    name: 'Occupational Exposure & Cancer Epidemiology',
+    scanningDomain: 'Petrochemical exposure science, IARC monographs, biomonitoring, cancer cluster signals',
+    sourcesMonitored: ['PubMed', 'IARC', 'NIOSH', 'OSHA', 'IOGP', 'Embase'],
+    signalsOwned: 8,
+    lastRunAt: '2026-04-30T21:48:00Z',
+  },
+  {
+    id: 'regulatory',
+    name: 'Regulatory & Standards Evolution',
+    scanningDomain: 'OSHA/NIOSH/HSE/EU-OSHA rulemaking, OEUK, IOGP, medical fitness regimes',
+    sourcesMonitored: ['OSHA Reg Agenda', 'NIOSH', 'HSE', 'EU-OSHA', 'OEUK', 'IPIECA'],
+    signalsOwned: 8,
+    lastRunAt: '2026-04-30T20:02:00Z',
+  },
+  {
+    id: 'climate',
+    name: 'Climate–Health Interfaces',
+    scanningDomain: 'Heat stress, vector range expansion, air quality, climate-driven mobility constraints',
+    sourcesMonitored: ['Lancet Countdown', 'WMO', 'NOAA', 'Copernicus C3S', 'PubMed'],
+    signalsOwned: 8,
+    lastRunAt: '2026-04-30T22:02:00Z',
+  },
+  {
+    id: 'psychosocial',
+    name: 'Psychosocial Risk & Workforce Resilience',
+    scanningDomain: 'Fatigue, mental health, ageing workforce, isolation, energy-transition stress',
+    sourcesMonitored: ['ILO', 'WHO MHGap', 'PubMed', 'IOGP HSSE', 'NIOSH Total Worker Health'],
+    signalsOwned: 8,
+    lastRunAt: '2026-04-30T19:31:00Z',
+  },
+];
