@@ -6,9 +6,24 @@ import { SideRail } from '@/components/nav/SideRail';
 import { GlobalFilters } from '@/components/nav/GlobalFilters';
 import { Footer } from '@/components/nav/Footer';
 
+// basePath-aware asset URL for metadata (link tags aren't auto-rewritten
+// by Next.js the way Image/Link components are).
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export const metadata: Metadata = {
   title: 'Shell Health Horizon — Executive Intelligence',
   description: 'Illustrative prototype dashboard for the Shell Health Horizon Scanning programme.',
+  icons: {
+    // Prefer SVG on capable browsers (Chrome 80+, Firefox 41+, Safari 9+) —
+    // pixel-perfect at any zoom or DPI. PNG + ICO fall back for older agents
+    // and surfaces (Outlook web, mail clients, embed previews).
+    icon: [
+      { url: `${base}/icon.svg`, type: 'image/svg+xml' },
+      { url: `${base}/icon.png`, type: 'image/png', sizes: '32x32' },
+    ],
+    apple: `${base}/apple-icon.png`,
+    shortcut: `${base}/favicon.ico`,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

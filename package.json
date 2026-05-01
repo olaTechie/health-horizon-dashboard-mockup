@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "generate:data": "tsx scripts/generate-mock-data.ts",
-    "generate:briefs": "tsx scripts/generate-brief-pdfs.ts"
+    "generate:briefs": "tsx scripts/generate-brief-pdfs.ts",
+    "generate:favicons": "tsx scripts/generate-favicons.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -51,6 +52,8 @@
     "eslint-config-next": "15.5.15",
     "jsdom": "^25.0.1",
     "pdfkit": "^0.18.0",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5",
