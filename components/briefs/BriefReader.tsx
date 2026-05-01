@@ -1,11 +1,13 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { fmtDate } from '@/lib/format';
 import { assetUrl } from '@/lib/assetUrl';
 import { TierDot } from '@/components/shared/TierBadge';
 import { TierBadge } from '@/components/shared/TierBadge';
+import { BriefPdfViewer } from '@/components/briefs/BriefPdfViewer';
 import type { Brief, Signal } from '@/lib/types';
 
 interface BriefReaderProps {
@@ -29,6 +31,8 @@ Maturity assessment across the five scanning domains found that Health Impact As
 
 export function BriefReader({ brief, signals }: BriefReaderProps) {
   const signalMap = new Map(signals.map((s) => [s.id, s]));
+
+  const [pdfOpen, setPdfOpen] = useState(false);
 
   return (
     <article
@@ -256,17 +260,25 @@ export function BriefReader({ brief, signals }: BriefReaderProps) {
 
           {brief.pdfPath && (
             <div className="pt-4 border-t border-[var(--border)]">
-              <a
-                href={assetUrl(brief.pdfPath)}
-                download
+              <button
+                type="button"
+                onClick={() => setPdfOpen(true)}
                 className="inline-flex items-center gap-2 rounded-md bg-[var(--ink)] text-[var(--bg)] px-4 py-2.5 text-sm font-medium transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--tier-watch)]"
+                aria-haspopup="dialog"
+                aria-expanded={pdfOpen}
               >
-                <Download className="size-4" aria-hidden="true" />
-                Download print-ready PDF
-              </a>
+                <FileText className="size-4" aria-hidden="true" />
+                View print-ready PDF
+              </button>
               <p className="mt-2 text-xs text-[var(--ink-tertiary)]">
-                {brief.quarter} brief · Published {fmtDate(brief.publishedAt)}
+                {brief.quarter} brief · Published {fmtDate(brief.publishedAt)} · Download available inside the viewer
               </p>
+              <BriefPdfViewer
+                open={pdfOpen}
+                url={assetUrl(brief.pdfPath)}
+                title={`${brief.quarter} Quarterly Brief — ${brief.id}`}
+                onClose={() => setPdfOpen(false)}
+              />
             </div>
           )}
         </div>
