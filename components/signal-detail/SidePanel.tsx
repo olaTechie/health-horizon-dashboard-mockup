@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AgentIcon, AGENT_LABEL } from '@/components/shared/AgentIcon';
+import { AgentIcon } from '@/components/shared/AgentIcon';
 import { ConfidenceMeter } from '@/components/shared/ConfidenceMeter';
 import { TierDot } from '@/components/shared/TierBadge';
 import type { Signal, Agent, Confidence, PPAPillar } from '@/lib/types';
